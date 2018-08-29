@@ -281,9 +281,10 @@
                     <h3 class="accordion-trigger noselect">Approval</h3>
                     <div class="Approval"> 
                         <form action="/" method="POST" class="approvalForm">
-                            <input type="submit" id="acceptClicked" value="Accept" >
-                            <input type="submit" id="rejectClicked" value="Reject" >
+                            
                         </form>
+                        <button type="button" id="acceptClicked" value="Accept">Accept</button>
+                        <input type="button" id="rejectClicked" value="Reject">
                     </div>
             </section>
         </aside>
@@ -293,6 +294,29 @@
     <script src="{{ url_for('static', filename='js/webvowl.app.js') }}"></script>
     <script>
         window.onload = webvowl.app().initialize;
+        
+        function returnNameLink(){
+        var a = document.getElementById("propAttributes").innerHTML;
+        console.log(a);
+		// document.getElementById("acceptClicked").NameToBeReturned = a; 
+		// document.getElementById("rejectClicked").NameToBeReturned = a ; 
+		document.getElementById('rejectClicked').addEventListener('click', function(){
+            var a = document.createElement(document.getElementById("propAttributes").innerHTML);
+            console.log(a.innerHTML);
+			var xhr = new XMLHttpRequest();
+			xhr.open("POST", '/', true);
+			xhr.send("name="+a);		
+		});
+		document.getElementById('acceptClicked').onclick = function(a){
+            console.log(a);
+			var xhr = new XMLHttpRequest();
+			xhr.open("POST", '/', true);
+			xhr.send("name="+a);		
+        }
+        
+    }
+    
+    returnNameLink();
     </script>
 </body>
 

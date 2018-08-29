@@ -27,8 +27,10 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route('/', methods=["GET", "POST"])
     def hello():
-        if request.method == "POST" :
-            print("Posted")
+        if request.method == 'GET' :
+            print("GET")
+        if request.method == 'POST' :
+            print(request.values)
         return render_template("index.html")
 
     return app
