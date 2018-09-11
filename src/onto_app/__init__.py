@@ -30,7 +30,30 @@ def create_app(test_config=None):
         if request.method == 'GET' :
             print("GET")
         if request.method == 'POST' :
-            print(request.values)
+        
+            """ Returning name and type of links. Does not update with objects. Bias for new yet to be set, will be done so when more of the backend for it is built. """
+            a = str(request.data).split(',')    
+            temp_buffer = a[0]
+            temp_buffer2 = a[1]
+            decision  = a[2]
+
+            print(decision[12:-3])
+
+            i = 0
+            try:
+                while temp_buffer[i] != '>':
+                    i += 1
+            except:
+                print(i)
+            
+            if temp_buffer[-5 :-1] == '</a>' : 
+                print(temp_buffer[i+1:-5])
+            else  :
+                print(temp_buffer[i+1:-8])
+
+            print(temp_buffer2[8 : -1])
+            """ End of preliminary return of accept return. """ 
+
         return render_template("index.html")
 
     return app
