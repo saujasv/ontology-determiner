@@ -19,6 +19,15 @@
 
 <body>
     <main>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class=flashes>
+                {% for message in messages %}
+                    <li style="color: red;">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
         <section id="canvasArea">
             <div id="browserCheck" class="hidden">
                 WebVOWL does not work properly in Internet Explorer and Microsoft Edge.
@@ -79,7 +88,7 @@
                         <div class="converter-form">
                             <input class="hidden" type="file" id="file-converter-input" autocomplete="off">
                             <label class="truncate" id="file-converter-label" for="file-converter-input">Select ontology file</label>
-                            <button type="submit" id="file-converter-button" disabled>
+                            <button type="submit" id="file-converter-button" disabled onsubmit="window.history.back()">
                                 Upload
                             </button>
                         </div>
@@ -302,6 +311,9 @@
                 </div>
             </section>
         </aside>
+        {% if OntologyContentJson %}
+		    <div class="hidden" id="OntologyContentSource" value='{{ OntologyContentJson }}'>{{ OntologyContentJson|tojson|safe }}</div>
+	    {% endif %}
     </main>
     <script src="{{ url_for('static', filename='js/d3.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/webvowl.js') }}"></script>
