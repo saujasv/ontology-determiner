@@ -17,6 +17,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'on
 db = SQLAlchemy(app)
 
 from onto_app import routes, models
-from onto import *
+from onto_app.onto import *
 
 #add_onto_file(0, 'pizza', os.path.abspath(os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + '/data/owl/pizza.owl')), os.path.abspath(os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + '/data/json/pizza.json')))
