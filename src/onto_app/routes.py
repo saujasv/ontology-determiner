@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, request, flash, url_for, session
 from onto_app import app, models
+from onto import *
 
 # a simple page that says hello
 @app.route('/', methods=["GET", "POST"])

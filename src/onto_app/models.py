@@ -8,30 +8,31 @@ class users(db.Model):
     password = db.Column(db.String(200), nullable=False)
     privilege = db.Column(db.Integer, nullable=False)
     ontology = db.relationship('ontologies', backref='users')
-    decisions = db.relationship('decisions', backref='users')
+    decisions = db.relationship('class_decisions', backref='users')
 
 class ontologies(db.Model):
-    __tabelname__ = 'ontologies'
+    __tablename__ = 'ontologies'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(200), nullable=False)
     filepath = db.Column(db.String(200), unique=True, nullable=False)
     admin_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-    relations = db.relationship('relations', backref='ontologies')
-    decisions = db.relationship('decisions', backref='ontologies')
+    relations = db.relationship('class_relations', backref='ontologies')
 
-class relations(db.Model):
-    name = db.Column(db.String(200), nullable=False, primary_key=True)
-    type = db.Column(db.String(200), nullable=False)
-    domain_item = db.Column(db.String(200), nullable=False, primary_key=True)
-    range_item = db.Column(db.String(200), nullable=False, primary_key=True)
+class class_relations(db.Model):
+    __tablename__ = 'class_relations'
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    property = db.Column(db.String(200), nullable=False)
+    domain = db.Column(db.String(200), nullable=False)
+    range = db.Column(db.String(200), nullable=False)
+    quantifier = db.Column(db.String(200))
     onto_id = db.Column(db.Integer, db.ForeignKey('ontologies.id'), nullable=False)
-    decisions = db.relationship('decisions', backref='relations')
+    decisions = db.relationship('class_decisions', backref='class_relations')
 
-class decisions(db.Model):
-    name = db.Column(db.String(200), db.ForeignKey('relations.name'), nullable=False, primary_key=True)
-    domain_item = db.Column(db.String(200), db.ForeignKey('relations.domain_item'), nullable=False, primary_key=True)
-    range_item = db.Column(db.String(200), db.ForeignKey('relations.range_item'), nullable=False, primary_key=True)
-    onto_id = db.Column(db.Integer, db.ForeignKey('ontologies.id'), nullable=False)
+class class_decisions(db.Model):
+    __tablename__ = 'class_decisions'
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    relation_id = db.Column(db.Integer, db.ForeignKey('class_relations.id'), nullable=False)
+    approved = db.Column(db.Integer, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
 db.drop_all()

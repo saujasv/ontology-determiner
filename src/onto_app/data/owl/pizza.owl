@@ -224,11 +224,11 @@ This is an example ontology that contains all constructs required for the variou
                 <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping"/>
                 <owl:allValuesFrom>
                     <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
+                        <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping"/>
                             <rdf:Description rdf:about="http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperoniSausageTopping"/>
                             <rdf:Description rdf:about="http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping"/>
-                        </owl:unionOf>
+                        </owl:intersectionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
             </owl:Restriction>
@@ -366,6 +366,7 @@ This is an example ontology that contains all constructs required for the variou
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping"/>
                 <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping"/>
+
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -637,6 +638,7 @@ This is an example ontology that contains all constructs required for the variou
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness"/>
                 <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#Mild"/>
+
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ChickenTopping</rdfs:label>
@@ -1060,7 +1062,6 @@ This is an example ontology that contains all constructs required for the variou
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt">CoberturaDeGorgonzola</rdfs:label>
         <rdfs:label xml:lang="en">GorgonzolaTopping</rdfs:label>
-        <rdfs:comment xml:lang="en">Approved</rdfs:comment>
         <skos:prefLabel xml:lang="en">Gorgonzola</skos:prefLabel>
     </owl:Class>
 
@@ -1471,7 +1472,6 @@ This is an example ontology that contains all constructs required for the variou
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza">
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza"/>
         <rdfs:comment xml:lang="en">A pizza that can be found on a pizza menu</rdfs:comment>
-        <rdfs:comment xml:lang="en">Approved</rdfs:comment>
         <rdfs:label xml:lang="pt">PizzaComUmNome</rdfs:label>
     </owl:Class>
 
