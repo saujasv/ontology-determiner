@@ -1,7 +1,7 @@
 import subprocess
 
 from onto_app import db
-from aggregate import aggregate
+from onto_app.aggregate import aggregate
 from rdflib import Graph
 from rdflib.namespace import OWL, RDF, RDFS
 
@@ -85,15 +85,14 @@ def add_decision(user_id, property, domain, range, quantifier, onto_id, decision
                         WHERE onto_id = :onto_id
                             AND property = :property
                             AND domain = :domain
-                            AND range = :range
-                            AND quantifier = :quantifier"""
+                            AND range = :range"""
 
     result = db.engine.execute(relation_query, {
         'onto_id': onto_id,
         'property': property,
         'domain': domain,
-        'range': range,
-        'quantifier': quantifier
+        'range': range
+        # 'quantifier': quantifier
     })
 
     relation_id = result.fetchone()['id']

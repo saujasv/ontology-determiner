@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-from flask import Flask, render_template, redirect, request, flash, url_for, session
-from onto_app import app, models
-from onto import *
-=======
 from flask import Flask, render_template, request, session
 from onto_app import app, db
 import os
@@ -10,39 +5,65 @@ import os
 from flask import send_file, send_from_directory, redirect, url_for, flash, current_app
 from werkzeug.utils import secure_filename
 import json
-
->>>>>>> 1af90bf7c815dd3c4536c27b2ad6c11824b598f5
+from onto_app.onto import *
 
 @app.route('/', methods=["GET", "POST"])
 def hello():
     if request.method == 'GET' :
-        print("GET")
+        add_onto_file(1, "pizza", "./data/owl/pizza.owl", "./data/json/pizza.json", "./data/new/pizza.txt")
+        return "Pizza ontology has been added"
     if request.method == 'POST' :
     
         """ Returning name and type of links. Does not update with objects. Bias for new yet to be set, will be done so when more of the backend for it is built. """
         a = str(request.data).split(',')    
-        temp_buffer = a[0]
-        temp_buffer2 = a[1]
-        decision  = a[2]
+        Prop = a[0]
+        Type = a[1]
+        Decision  = a[2]
+        Domain = a[3]
+        Range = a[4]
 
-        print(decision[12:-3])
+        print(Decision[12:-3])
 
         i = 0
         try:
-            while temp_buffer[i] != '>':
+            while Prop[i] != '>':
                 i += 1
         except:
             print(i)
         
-        if temp_buffer[-5 :-1] == '</a>' : 
-            print(temp_buffer[i+1:-5])
+        if Prop[-5 :-1] == '</a>' : 
+            print(Prop[i+1:-5])
         else  :
-            print(temp_buffer[i+1:-8])
+            print(Prop[i+1:-8])
 
-        print(temp_buffer2[8 : -1])
+        print(Type[8 : -1])
         """ End of preliminary return of accept return. """ 
 
     return render_template("index.html")
+
+@app.route('/decision', methods=["POST"])
+def decision() : 
+    if request.method == 'POST' : 
+        """ Decisions stored """
+        data = str(request.data).split(',')
+        print(data)
+        Prop = data[0][11:-1]
+        Type = data[4][8:-1]
+        Decision  = data[1][12:-1]
+        Domain = data[2][10:-1]
+        Range = data[3][9:-1]
+
+        print("Prop : ", Prop) 
+        print("Domain : ", Domain)
+        print("Range : ", Range) 
+        print("Decision : ", Decision) 
+        print("Type : ", Type)
+        user_id = 1
+        onto_id = 1
+        add_decision(user_id, Prop, Domain, Range, Type, onto_id, {'Accept': 1, 'Reject':0}[Decision])
+
+    return render_template("index.html")
+
 
 # prevent cached responses
 @app.after_request
@@ -95,20 +116,35 @@ def return_files(filename):
     #             return redirect(url_for('uploaded_file',
     #                                     filename=filename))
 
-@app.route("/loadOntology/<path:filename>", methods = ['GET', 'POST'])
+@app.route("/loadOntology/<path:filename>/", methods = ['GET', 'POST'])
 def loadOntology(filename) : 
-    uploads = os.path.join(current_app.root_path,"OntoData")
+    uploads = os.path.join(current_app.root_path,"data/json")
     uploads = uploads + "/" + str(filename) 
 
+    fname = str(filename) 
+    fname = fname.split(".")[0]
+    fname = fname + ".txt"
+    new_relations = get_new_relations(os.path.join(current_app.root_path,"data/new")+ "/" + fname)
+    print(new_relations)
+
     try :
-        with open(uploads[:-1],"r") as json_data:
+        with open(uploads,"r") as json_data:
             contents = json.load(json_data)
-            print(contents)
+            # print(contents)
     except :
         flash('Oops record not found')
         return redirect(url_for('hello'))
+
+    # try :
+    #     with open(new_relations[:-1],"r") as json_data:
+    #         NewRelcontents = json.load(json_data)
+    #         print(NewRelcontents)
+    # except :
+    #     flash('Oops new rel text not found')
+    #     return redirect(url_for('hello'))
+
     # contents = f.read()
 
     # print(contents)
     #return redirect(url_for('hello'))
-    return render_template("index.html", OntologyContentJson = contents)
+    return render_template("index.html", OntologyContentJson = contents, hiddenJSON = new_relations)
