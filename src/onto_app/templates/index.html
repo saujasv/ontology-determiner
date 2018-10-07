@@ -302,18 +302,24 @@
                         <p><span>Select an element in the visualization.</span></p>
                     </div>
                 </div>
-                <!-- <h3 class="accordion-trigger noselect">Approval</h3> -->
-                <div class="Approval">
-                    <form id="approval" action="/action/" method="POST" class="approvalForm">
-                        <!-- <input type="" id="acceptClicked" value="">
-                        <input type="" id="rejectClicked" value=""> -->
-                    </form>
-                </div>
+            <!-- <div id="AcpRej"> -->
+            <!-- <h3 class="accordion-trigger noselect">Approval</h3> -->
+            <br/><br/>
+		    <div class="Approval"> 
+			    <form action = "/action/" method = "POST" class= "approvalForm">
+				    <input type="button" id="acceptClicked" value="Accept" style="display: none">
+				    <input type="button" id="rejectClicked" value="Reject" style="display: none" >
+			    </form>
+            </div>
+            <!-- </div> -->
             </section>
         </aside>
         {% if OntologyContentJson %}
 		    <div class="hidden" id="OntologyContentSource" value='{{ OntologyContentJson }}'>{{ OntologyContentJson|tojson|safe }}</div>
-	    {% endif %}
+        {% endif %}
+        {% if hiddenJSON %}
+        <div class="hidden" id="hiddenJSON" value='{{ hiddenJSON }}'>{{ hiddenJSON|tojson|safe }}</div>
+        {% endif %}
     </main>
     <script src="{{ url_for('static', filename='js/d3.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/webvowl.js') }}"></script>
