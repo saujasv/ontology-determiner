@@ -57,7 +57,8 @@ module.exports = function (graphContainerSelector) {
         global_dof = -1,
         keepDetailsCollapsedOnLoading=true,
         adjustingGraphSize=false,
-        zoom;
+        zoom,
+        linkstate = [] ;
 
     /** --------------------------------------------------------- **/
     /** -- getter and setter definitions                       -- **/
@@ -91,6 +92,9 @@ module.exports = function (graphContainerSelector) {
     graph.translation = function () {
         return graphTranslation;
     };
+    graph.LinkState = function (){
+        return linkstate ; 
+    }
 
     // Returns the visible nodes
     graph.graphNodeElements = function () {
@@ -318,57 +322,62 @@ module.exports = function (graphContainerSelector) {
             options.selectionModules().forEach(function (module) {
                 module.handle(selectedElement);
             });
-            // const e = React.createElement;
-            // ReactDOM.render(
-            // e('div', null, 'Hello World'),
-            // document.getElementById('approval')
-            // );
         }
 
-        nodeElements.on("click", function (clickedNode) {
+        // nodeElements.on("click", function (clickedNode) {
+        //     executeModules(clickedNode);
+        //     // var parent = d3.select("#approval").node();
+        //     // console.log(parent);
+        //     // while(parent.hasChildNodes())
+        //     // {
+        //     //     parent.removeChild(parent.firstChild);
+        //     //     console.log(parent.children.length);
+        //     // }
+        // });
+
+        // labelGroupElements.selectAll(".label").on("click", function (clickedProperty) {
+        //     console.log(clickedProperty)
+        //     executeModules(clickedProperty);
+        //     // var parent = d3.select("#approval").node();
+        //     // console.log(parent);
+        //     // while(parent.hasChildNodes())
+        //     // {
+        //     //     parent.removeChild(parent.firstChild);
+        //     //     console.log(parent.children.length);
+        //     // }
+        //     // var accept = document.createElement("INPUT");
+        //     // var reject = document.createElement("INPUT");
+        //     // accept.setAttribute("type", "button");
+        //     // accept.setAttribute("value", "Accept");
+        //     // //accept.setAttribute("id", "accept");
+        //     // reject.setAttribute("type", "button");
+        //     // reject.setAttribute("value", "Reject");
+        //     // //reject.setAttribute("id", "reject");
+        //     // parent.appendChild(accept);
+        //     // parent.appendChild(reject);
+        // });
+
+        nodeElements.on("click", function (clickedNode) {            
             executeModules(clickedNode);
-            // d3.select("#acceptClicked").node().type = "";
-            // d3.select("#rejectClicked").node().type = "";
-            // d3.select("#acceptClicked").node().value = "";
-            // d3.select("#rejectClicked").node().value = "";
-            var parent = d3.select("#approval").node();
-            // var child1 = d3.select("#accept").node();
-            // var child2 =  d3.select("#reject").node();
-            console.log(parent);
-            while(parent.hasChildNodes())
-            {
-                parent.removeChild(parent.firstChild);
-                console.log(parent.children.length);
-            }
+            var accept = d3.select("#acceptClicked").node();
+            var reject = d3.select("#rejectClicked").node();
+            accept.style.display = 'none';
+            reject.style.display = 'none';
+
         });
 
         labelGroupElements.selectAll(".label").on("click", function (clickedProperty) {
-            console.log(clickedProperty)
             executeModules(clickedProperty);
-            // d3.select("#acceptClicked").node().type = "button";
-            // d3.select("#rejectClicked").node().type = "button";
-            // d3.select("#acceptClicked").node().value = "Accept";
-            // d3.select("#rejectClicked").node().value = "Reject";
-            var parent = d3.select("#approval").node();
-            console.log(parent);
-            while(parent.hasChildNodes())
-            {
-                parent.removeChild(parent.firstChild);
-                console.log(parent.children.length);
-            }
-            var accept = document.createElement("INPUT");
-            var reject = document.createElement("INPUT");
-            accept.setAttribute("type", "button");
-            accept.setAttribute("value", "Accept");
-            //accept.setAttribute("id", "accept");
-            reject.setAttribute("type", "button");
-            reject.setAttribute("value", "Reject");
-            //reject.setAttribute("id", "reject");
-            parent.appendChild(accept);
-            parent.appendChild(reject);
-        });
-    }
-
+            var accept = d3.select("#acceptClicked").node();
+            var reject = d3.select("#rejectClicked").node();
+            accept.style.display = '';
+            reject.style.display = '';
+            accept.type = "button";
+            reject.type = "button";
+            accept.value = "Accept";
+            reject.value = "Reject";
+    });
+}
     /** Adjusts the containers current scale and position. */
     function zoomed() {
         var zoomEventByMWheel = false;
@@ -421,6 +430,7 @@ module.exports = function (graphContainerSelector) {
     }
 
     function redrawContent() {
+ 
         var markerContainer;
 
         if (!graphContainer) {
@@ -432,10 +442,13 @@ module.exports = function (graphContainerSelector) {
 
         // Last container -> elements of this container overlap others
         linkContainer = graphContainer.append("g").classed("linkContainer", true);
+        //console.log(linkContainer)
         cardinalityContainer = graphContainer.append("g").classed("cardinalityContainer", true);
         labelContainer = graphContainer.append("g").classed("labelContainer", true);
         nodeContainer = graphContainer.append("g").classed("nodeContainer", true);
 
+        // console.log(labelContainer) ; 
+        // console.log("break") ; 
         // Add an extra container for all markers
         markerContainer = linkContainer.append("defs");
 
@@ -450,6 +463,7 @@ module.exports = function (graphContainerSelector) {
             .call(dragBehaviour);
 
         nodeElements.each(function (node) {
+            // console.log(node)
             node.draw(d3.select(this));
         });
         // Draw label groups (property + inverse)
@@ -470,6 +484,7 @@ module.exports = function (graphContainerSelector) {
         // Place subclass label groups on the bottom of all labels
         labelGroupElements.each(function (label) {
             // the label might be hidden e.g. in compact notation
+            // console.log(label) ;
             if (!this.parentNode) {
                 return;
             }
@@ -477,6 +492,7 @@ module.exports = function (graphContainerSelector) {
             if (elementTools.isRdfsSubClassOf(label.property())) {
                 var parentNode = this.parentNode;
                 parentNode.insertBefore(this, parentNode.firstChild);
+                // console.log("PARENT : ", parentNode) ; 
             }
         });
 
@@ -815,11 +831,17 @@ module.exports = function (graphContainerSelector) {
             properties: parser.properties()
         };
 
+        linkstate = unfilteredData ; 
+
         // Initialize filters with data to replicate consecutive filtering
         var initializationData = _.clone(unfilteredData);
         options.filterModules().forEach(function (module) {
             initializationData = filterFunction(module, initializationData, true);
         });
+
+        // for(var i = 0, l = initializationData.length ; i < l ; i++){
+        //     linkstate.push(initializationData[i])
+        // }
 
         // generate dictionary here ;
         generateDictionary(unfilteredData);
@@ -872,6 +894,8 @@ module.exports = function (graphContainerSelector) {
         classNodes = preprocessedData.nodes;
         properties = preprocessedData.properties;
         links = linkCreator.createLinks(properties);
+        // links = _links.links
+        // linkprops = _links.linkprops
         labelNodes = links.map(function (link) {
             return link.label();
         });
@@ -886,12 +910,16 @@ module.exports = function (graphContainerSelector) {
 
     function filterFunction(module, data, initializing) {
         links = linkCreator.createLinks(data.properties);
+        // links = linkCreator.createLinks(data.properties);
+        // // links = _links.links
+        // // linkprops = _links.linkprops
         storeLinksOnNodes(data.nodes, links);
 
         if (initializing) {
             if (module.initialize) {
                 module.initialize(data.nodes, data.properties);
             }
+            // console.log(linkprops)
         }
         module.filter(data.nodes, data.properties);
         return {
@@ -905,6 +933,7 @@ module.exports = function (graphContainerSelector) {
     /** -- force-layout related functions                      -- **/
     /** --------------------------------------------------------- **/
     function storeLinksOnNodes(nodes, links) {
+        // linkstate = [];
         for (var i = 0, nodesLength = nodes.length; i < nodesLength; i++) {
             var node = nodes[i],
                 connectedLinks = [];
@@ -918,7 +947,10 @@ module.exports = function (graphContainerSelector) {
                 }
             }
             node.links(connectedLinks);
+            // linkstate.push(connectedLinks) ; 
         }
+        // console.log(linkstate) ; 
+        // graph.linkstate=nodes ; 
     }
 
     function setForceLayoutData(classNodes, labelNodes, links) {
