@@ -133,6 +133,7 @@ module.exports = function () {
 			returnNameLink(); // Returns the decision, domain, range, type, and name of the relationship accepted, or rejected.
 			console.log(document.getElementById("hiddenJSON").innerHTML) ; 
 			setColor() ; // Sets color for new relationships
+			setNodeColor() ; 
 			// ConditionalRenderOfAcceptRej() ; 
         }
 	};
@@ -369,12 +370,18 @@ module.exports = function () {
 	function isNew(linkstateprop){
 		var a = document.getElementById("hiddenJSON").innerHTML ; 
 		a = JSON.parse(a) ; 
+		var p = 1 
 		for( var i = 0 ; i < a.length ; i++)
 		{
 			// console.log(linkstateprop.domain().iri())
+			try {
 			if(linkstateprop.domain().iri() == a[i][0] && linkstateprop.iri() == a[i][1] && linkstateprop.range().iri() == a[i][3])
 			{
 				return true ;
+			}
+			}
+			catch{
+				p = p 
 			}
 		}
 		return false ; 
@@ -388,11 +395,39 @@ module.exports = function () {
 				if (isNew(linkstateprop[i])){
 					var r = document.getElementById(linkstateprop[i].id())
 					if (r) {
-						r.getElementsByTagName("rect")[0].setAttribute("style", "fill: rgb(255,0,0) ; ")
+						r.getElementsByTagName("rect")[0].setAttribute("style", "fill: rgb(120, 200, 120) ; ")
 					}
 				}
 			}
 	
+	}
+
+	// checks if node selected is new 
+	function isNewNode(linkstatenode){
+		var a = document.getElementById("hiddenJSON").innerHTML ; 
+		a = JSON.parse(a) ; 
+		for( var i = 0 ; i < a.length ; i++)
+		{
+			var b = a[i][2].split("/")
+			if(linkstatenode.iri() == a[i][0] && b.includes("owl#Class")==true)
+			{
+				return true ;
+			}
+		}
+		return false ; 
+	}
+
+	// sets different color to new nodes
+	function setNodeColor(){
+		linkstatenode = graph.LinkState()["nodes"] ; 
+		for(var i = 0, l = graph.LinkState()["nodes"].length ; i < l ; ++i){
+			if (isNewNode(linkstatenode[i])){
+				var r = document.getElementById(linkstatenode[i].id())
+				if (r) {
+					r.getElementsByTagName("circle")[0].setAttribute("style", "fill: rgb(0,255,0) ; ")
+				}
+			}
+		}
 	}
 
 	function RemoveLocalUploadOption(){

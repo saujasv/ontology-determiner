@@ -361,8 +361,12 @@ module.exports = function (graphContainerSelector) {
             executeModules(clickedNode);
             var accept = d3.select("#acceptClicked").node();
             var reject = d3.select("#rejectClicked").node();
-            accept.style.display = 'none';
-            reject.style.display = 'none';
+            accept.style.display = '';
+            reject.style.display = '';
+            accept.type = "button";
+            reject.type = "button";
+            accept.value = "Accept";
+            reject.value = "Reject";
 
         });
 
