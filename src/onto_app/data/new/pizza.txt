@@ -446,10 +446,6 @@ http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho http://www.w3.org/2000/01/
 N1b227c75dea54aa1b278432d03c24ad6 http://www.w3.org/2002/07/owl#onProperty http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping
 N1b227c75dea54aa1b278432d03c24ad6 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://www.w3.org/2002/07/owl#Restriction
 N1b227c75dea54aa1b278432d03c24ad6 http://www.w3.org/2002/07/owl#someValuesFrom http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping
-http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo http://www.w3.org/2000/01/rdf-schema#subClassOf N1023eec154f240ccba0ba0ecdf3a6222
-N1023eec154f240ccba0ba0ecdf3a6222 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://www.w3.org/2002/07/owl#Restriction
-N1023eec154f240ccba0ba0ecdf3a6222 http://www.w3.org/2002/07/owl#onProperty http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping
-N1023eec154f240ccba0ba0ecdf3a6222 http://www.w3.org/2002/07/owl#someValuesFrom http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping
 http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons http://www.w3.org/2000/01/rdf-schema#subClassOf N0e76f6a8d5ea4d6394c88298a2f459f1
 N0e76f6a8d5ea4d6394c88298a2f459f1 http://www.w3.org/2002/07/owl#onProperty http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping
 N0e76f6a8d5ea4d6394c88298a2f459f1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://www.w3.org/2002/07/owl#Restriction
@@ -575,3 +571,4 @@ http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping http://www.w3.org/
 N793812fc093f48628fa7608600f5c97a http://www.w3.org/2002/07/owl#onProperty http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness
 N793812fc093f48628fa7608600f5c97a http://www.w3.org/2002/07/owl#someValuesFrom http://www.co-ode.org/ontologies/pizza/pizza.owl#Mild
 N793812fc093f48628fa7608600f5c97a http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://www.w3.org/2002/07/owl#Restriction
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://www.w3.org/2002/07/owl#Class
