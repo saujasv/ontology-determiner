@@ -58,23 +58,35 @@ def decision() :
         """ Decisions stored """
         """ Index numbers used to extract specific content from already existing inner html. This will hold through across cases.""" 
         data = str(request.data).split(',')
-        # print(data)
-        Prop = data[0][11:-1]
-        Type = data[4][8:-1]
-        Decision  = data[1][12:-1]
-        Domain = data[2][10:-1]
-        Range = data[3][9:-1]
+        # if flag is 1, then relation, else node
+        if data[0][-1] == "1" :
+            #when a relationship is accepted/rejected
+            Prop = data[1][8:-1]
+            Type = data[5][8:-1]
+            Decision  = data[2][12:-1]
+            Domain = data[3][10:-1]
+            Range = data[4][9:-1]
 
-        print("Prop : ", Prop) 
-        print("Domain : ", Domain)
-        print("Range : ", Range) 
-        print("Decision : ", Decision) 
-        print("Type : ", Type)
-        user_id = 1
-        onto_id = 1
-        """ Call add_decision from onto.py to store decision """ 
-        add_decision(user_id, Prop, Domain, Range, Type, onto_id, {'Accept': 1, 'Reject':0}[Decision])
+            print("Prop : ", Prop) 
+            print("Domain : ", Domain)
+            print("Range : ", Range) 
+            print("Decision : ", Decision) 
+            print("Type : ", Type)
+            user_id = 1
+            onto_id = 1
+            """ Call add_decision from onto.py to store decision """ 
+            add_decision(user_id, Prop, Domain, Range, Type, onto_id, {'Accept': 1, 'Reject':0}[Decision])
+        
+        elif data[0][-1] == "0" : 
+            # When a node is accpeted or rejected.
+            Name = data[1][8:-1]
+            Decision = data[2][12:-1]
 
+            print("Name : ", Name)
+            print("Decision :", Decision)
+
+            """ Call add_decision on node from onto.py to store decision """ 
+            
     return render_template("index.html")
 
 
@@ -104,7 +116,7 @@ def loadOntology(filename) :
         flash('Oops record not found')
         return redirect(url_for('hello'))
 
-    return render_template("index.html", OntologyContentJson = contents, hiddenJSON = new_relations)
+    return render_template("index.html", OntologyContentJson = contents, hiddenJSONRel = new_relations, hiddenJSONNode = new_relations)
     
 
 # @app.route('/return-files/<path:filename>/', methods = ['GET', 'POST'])

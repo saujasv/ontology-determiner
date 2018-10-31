@@ -317,8 +317,11 @@
         {% if OntologyContentJson %}
 		    <div class="hidden" id="OntologyContentSource" value='{{ OntologyContentJson }}'>{{ OntologyContentJson|tojson|safe }}</div>
         {% endif %}
-        {% if hiddenJSON %}
-        <div class="hidden" id="hiddenJSON" value='{{ hiddenJSON }}'>{{ hiddenJSON|tojson|safe }}</div>
+        {% if hiddenJSONRel %}
+        <div class="hidden" id="hiddenJSONRel" value='{{ hiddenJSONRel }}'>{{ hiddenJSONRel|tojson|safe }}</div>
+        {% endif %}
+        {% if hiddenJSONNode %}
+        <div class="hidden" id="hiddenJSONNode" value='{{ hiddenJSONNode }}'>{{ hiddenJSONNode|tojson|safe }}</div>
         {% endif %}
     </main>
     <script src="{{ url_for('static', filename='js/d3.min.js') }}"></script>
