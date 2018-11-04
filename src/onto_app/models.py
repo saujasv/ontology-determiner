@@ -35,5 +35,19 @@ class class_decisions(db.Model):
     approved = db.Column(db.Integer, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
+class nodes(db.Model):
+    __tablename__ = 'nodes'
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    onto_id = db.Column(db.Integer, db.ForeignKey('ontologies.id'), nullable=False)
+    name = db.Column(db.String(200), nullable=False)
+    decisions = db.relationship('node_decisions', backref='nodes')
+
+class node_decisions(db.Model):
+    __tablename__ = 'node_decisions'
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    node_id = db.Column(db.Integer, db.ForeignKey('nodes.id'), nullable=False)
+    approved = db.Column(db.Integer, nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+
 db.drop_all()
 db.create_all()

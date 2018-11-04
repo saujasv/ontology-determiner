@@ -5,7 +5,7 @@ module.exports = function () {
 		options = graph.graphOptions(),
 		languageTools = webvowl.util.languageTools(),
 		GRAPH_SELECTOR = "#graph",
-		// nodeArray = [], 
+		// nodeArray = [],
 	// Modules for the webvowl app
 		exportMenu     = require("./menu/exportMenu")     (graph),
 		filterMenu     = require("./menu/filterMenu")     (graph),
@@ -113,13 +113,13 @@ module.exports = function () {
             configMenu.setup();
 			graph.start();
 			adjustSize();
-			
+
 			var defZoom;
 			var w = graph.options().width();
 			var h = graph.options().height();
 			defZoom = Math.min(w, h) / 1000;
 			graph.setDefaultZoom(defZoom);
-			
+
 			// prevent backspace reloading event
             var htmlBody=d3.select("body");
             d3.select(document).on("keydown", function (e) {
@@ -130,10 +130,10 @@ module.exports = function () {
             });
 			loadingModule.parseUrlAndLoadOntology(); // loads automatically the ontology provided by the parameters
 			RemoveLocalUploadOption() ; // Removes local file upload option
-			returnNameLink(); // Returns the decision, domain, range, type, and name of the relationship accepted, or rejected. 
+			returnNameLink(); // Returns the decision, domain, range, type, and name of the relationship accepted, or rejected.
 			setColor() ; // Sets color for new relationships
-			setNodeColor() ; 
-			// ConditionalRenderOfAcceptRej() ; 
+			setNodeColor() ;
+			// ConditionalRenderOfAcceptRej() ;
         }
 	};
 
@@ -336,61 +336,61 @@ module.exports = function () {
 		document.getElementById('rejectClicked').onclick = function(){
 			if(document.getElementById("propertySelectionInformation").className == ""){
 			var ra = document.getElementById("propname").getElementsByTagName("a")[0].href;
-			var rb = document.getElementById("typeProp").innerHTML ; 
-			var rc = document.getElementById("domain").getElementsByTagName("a")[0].href ; 
-			var rd = document.getElementById("range").getElementsByTagName("a")[0].href ; 
-			var flag = 1 ; 
-			var rdecision = "Reject" ; 
+			var rb = document.getElementById("typeProp").innerHTML ;
+			var rc = document.getElementById("domain").getElementsByTagName("a")[0].href ;
+			var rd = document.getElementById("range").getElementsByTagName("a")[0].href ;
+			var flag = 1 ;
+			var rdecision = "Reject" ;
 			var xhr = new XMLHttpRequest();
 			var rparams = JSON.stringify({ flag : flag, name : ra, "decision" : rdecision, domain: rc, range : rd, type : rb, buffer:"hello"});
 			// console.log("Reject") ;
-			// console.log(a) ; 
-			// console.log(b) ; 
+			// console.log(a) ;
+			// console.log(b) ;
 			}
 			else if(document.getElementById("classSelectionInformation").className == ""){
 				var name = document.getElementById("name").getElementsByTagName("a")[0].href;
-				var flag = 0 ; 
-				var rdecision = "Reject" ; 
-				var xhr = new XMLHttpRequest() ; 
+				var flag = 0 ;
+				var rdecision = "Reject" ;
+				var xhr = new XMLHttpRequest() ;
 				var rparams = JSON.stringify({flag : flag, name : name, "decision" : rdecision, buffer:"hello" })
-			}	
+			}
 			xhr.open("POST", '/decision', true);
 			xhr.responseType = "text";
-			xhr.send(rparams);		
+			xhr.send(rparams);
 		} ;
 		document.getElementById('acceptClicked').onclick = function(){
 			if(document.getElementById("propertySelectionInformation").className == ""){
-				console.log("Property Selected") ; 
+				console.log("Property Selected") ;
 			var aa = document.getElementById("propname").getElementsByTagName("a")[0].href;
-			var ab = document.getElementById("typeProp").innerHTML ; 
-			var ac = document.getElementById("domain").getElementsByTagName("a")[0].href ; 
-			var ad = document.getElementById("range").getElementsByTagName("a")[0].href ; 
+			var ab = document.getElementById("typeProp").innerHTML ;
+			var ac = document.getElementById("domain").getElementsByTagName("a")[0].href ;
+			var ad = document.getElementById("range").getElementsByTagName("a")[0].href ;
 			var flag = 1 ;
-			var adecision = "Accept" ; 
-			// console.log("accept") ; 
-			// console.log(a) ; 
+			var adecision = "Accept" ;
+			// console.log("accept") ;
+			// console.log(a) ;
 			// console.log(b) ;
 			var xhr = new XMLHttpRequest();
 			var aparams = JSON.stringify({ flag : flag , name : aa, "decision" : adecision, domain: ac, range : ad, type : ab,buffer:"hello"});
 			}
 			else if(document.getElementById("classSelectionInformation").className == ""){
 				var name = document.getElementById("name").getElementsByTagName("a")[0].href;
-				var flag = 0 ; 
-				var adecision = "Accept" ; 
-				var xhr = new XMLHttpRequest() ; 
+				var flag = 0 ;
+				var adecision = "Accept" ;
+				var xhr = new XMLHttpRequest() ;
 				var aparams = JSON.stringify({flag : flag, name : name, "decision" : adecision, buffer:"hello" })
-			}	
+			}
 			xhr.open("POST", '/decision', true);
 			xhr.responseType = "text";
-			xhr.send(aparams);		
-		} ; 
+			xhr.send(aparams);
+		} ;
 	}
 
 	// checks if the relationship selected is new
 	function isNew(linkstateprop){
-		var a = document.getElementById("hiddenJSONRel").innerHTML ; 
-		a = JSON.parse(a) ; 
-		var p = 1 
+		var a = document.getElementById("hiddenJSONRel").innerHTML ;
+		a = JSON.parse(a) ;
+		var p = 1
 		for( var i = 0 ; i < a.length ; i++)
 		{
 			// console.log(linkstateprop.domain().iri())
@@ -399,13 +399,13 @@ module.exports = function () {
 				return true ;
 			}
 		}
-		return false ; 
+		return false ;
 	}
 
 	// sets different color to new relationships
 	function setColor() {
-		// var a = ["http://rdfs.org/sioc/ns#Space","http://rdfs.org/sioc/ns#has_usergroup","http://rdfs.org/sioc/ns#Usergroup"] ; 
-		linkstateprop = graph.LinkState()["properties"] ; 
+		// var a = ["http://rdfs.org/sioc/ns#Space","http://rdfs.org/sioc/ns#has_usergroup","http://rdfs.org/sioc/ns#Usergroup"] ;
+		linkstateprop = graph.LinkState()["properties"] ;
 		for( var i = 0, l = graph.LinkState()["properties"].length ; i < l ; i++){
 				if (isNew(linkstateprop[i])){
 					var r = document.getElementById(linkstateprop[i].id())
@@ -414,27 +414,26 @@ module.exports = function () {
 					}
 				}
 			}
-	
+
 	}
 
-	// checks if node selected is new 
+	// checks if node selected is new
 	function isNewNode(linkstatenode){
-		var a = document.getElementById("hiddenJSONNode").innerHTML ; 
-		a = JSON.parse(a) ; 
+		var a = document.getElementById("hiddenJSONNode").innerHTML ;
+		a = JSON.parse(a) ;
 		for( var i = 0 ; i < a.length ; i++)
 		{
-			var b = a[i][2].split("/")
-			if(linkstatenode.iri() == a[i][0] && b.includes("owl#Class")==true)
+			if(linkstatenode.iri() == a[i])
 			{
 				return true ;
 			}
 		}
-		return false ; 
+		return false ;
 	}
 
 	// sets different color to new nodes
 	function setNodeColor(){
-		linkstatenode = graph.LinkState()["nodes"] ; 
+		linkstatenode = graph.LinkState()["nodes"] ;
 		for(var i = 0, l = graph.LinkState()["nodes"].length ; i < l ; ++i){
 			if (isNewNode(linkstatenode[i])){
 				var r = document.getElementById(linkstatenode[i].id())
@@ -446,10 +445,9 @@ module.exports = function () {
 	}
 
 	function RemoveLocalUploadOption(){
-		document.getElementById('c_select').style.display = "none" ; 
+		document.getElementById('c_select').style.display = "none" ;
 	}
 
 
 	return app;
 };
-
