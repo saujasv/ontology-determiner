@@ -1,4 +1,6 @@
 import subprocess
+from os import listdir
+from os.path import isfile, join
 
 from onto_app import db
 from onto_app.aggregate import aggregate
@@ -144,3 +146,8 @@ def get_decision(relation_id):
     query = """SELECT * FROM class_decisions WHERE relation_id = :relation_id"""
     result = db.engine.execute(query, {'relation_id': relation_id})
     return aggregate(result.fetchall())
+
+def get_ontologies_on_server():
+    ontologies = ['.'.join(f.split('.')[:-1]) for f in listdir("./data/owl/") if isfile(join("./data/owl/", f))]
+    print(ontologies)
+    return ontologies

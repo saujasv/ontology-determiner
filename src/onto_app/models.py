@@ -3,9 +3,9 @@ from onto_app import db
 
 class users(db.Model):
     __tabelname__ = 'users'
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    username = db.Column(db.String(64), unique=True, nullable=False)
-    password = db.Column(db.String(200), nullable=False)
+    id = db.Column(db.String, primary_key=True)
+    username = db.Column(db.String(200), unique=True, nullable=False)
+    # password = db.Column(db.String(200), nullable=False)
     privilege = db.Column(db.Integer, nullable=False)
     ontology = db.relationship('ontologies', backref='users')
     decisions = db.relationship('class_decisions', backref='users')
