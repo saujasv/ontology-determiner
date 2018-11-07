@@ -10,10 +10,13 @@ from onto_app.onto import *
 import google.oauth2.credentials
 import google_auth_oauthlib.flow
 import googleapiclient.discovery
+from google.oauth2 import id_token
+from google.auth.transport import requests
 
 # This variable specifies the name of a file that contains the OAuth 2.0
 # information for this application, including its client_id and client_secret.
 CLIENT_SECRETS_FILE = "client_secret_395200844618-bnei4qvc8203ieoic6hpkbrkdnvmdq49.apps.googleusercontent.com.json"
+CLIENT_ID = "395200844618-bnei4qvc8203ieoic6hpkbrkdnvmdq49.apps.googleusercontent.com"
 
 # This OAuth 2.0 access scope allows for full read/write access to the
 # authenticated user's account and requires requests to use an SSL connection.
@@ -75,7 +78,7 @@ def login():
     flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
       CLIENT_SECRETS_FILE, scopes=SCOPES)
 
-    flow.redirect_uri = url_for('user', _external=True)
+    flow.redirect_uri = url_for('authenticated', _external=True)
 
     authorization_url, state = flow.authorization_url(
       # Enable offline access so that you can refresh an access token without
@@ -98,15 +101,15 @@ def credentials_to_dict(credentials):
           'client_secret': credentials.client_secret,
           'scopes': credentials.scopes}
 
-@app.route('/user')
-def user():
+@app.route('/authenticated')
+def authenticated():
     # Specify the state when creating the flow in the callback so that it can
     # verified in the authorization server response.
     state = session['state']
 
     flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
       CLIENT_SECRETS_FILE, scopes=SCOPES, state=state)
-    flow.redirect_uri = url_for('user', _external=True)
+    flow.redirect_uri = url_for('authenticated', _external=True)
 
     # Use the authorization server's response to fetch the OAuth 2.0 tokens.
     authorization_response = request.url
@@ -115,12 +118,40 @@ def user():
     # Store credentials in the session.
     # ACTION ITEM: In a production app, you likely want to save these
     #              credentials in a persistent database instead.
+    s = flow.authorized_session()
+    idinfo = s.get('https://www.googleapis.com/oauth2/v3/userinfo').json()
     credentials = flow.credentials
     session['credentials'] = credentials_to_dict(credentials)
+    userid = idinfo['sub']
+    email = idinfo['email']
+    # print("Hello", userid, email)
+    result = db.engine.execute("SELECT * FROM users WHERE id = :id", {'id': userid})
+    if not result.fetchone():
+        db.engine.execute("""INSERT INTO users (id, username, privilege) VALUES
+                            (:id, :username, :privilege)""", {'id': userid, 'username': email, 'privilege': 0})
+    session['userid'] = userid
+    session['username'] = email
 
-    add_onto_file(1, "pizza", "./data/owl/pizza.owl", "./data/json/pizza.json", "./data/new/pizza.txt")
-    return redirect(url_for('loadOntology', filename='pizza.json'))
+    return redirect(url_for('user'))
 
+@app.route('/user')
+def user():
+    if not 'credentials' in session:
+        return redirect(url_for('home'))
+
+    ontologies = get_ontologies_on_server()
+
+    # add_onto_file(1, "pizza", "./data/owl/pizza.owl", "./data/json/pizza.json", "./data/new/pizza.txt")
+    # return redirect(url_for('loadOntology', filename='pizza.json'))
+    return render_template("ontologies.html", ontologies=ontologies, username=session['username'])
+
+@app.route('/logout')
+def logout():
+    if 'credentials' in session:
+        del session['credentials']
+        del session['username']
+        del session['userid']
+    return redirect(url_for('home'))
 
 """ Stores decisions taken in frontend corresponding to relationships accept/reject into database """
 @app.route('/decision', methods=["POST"])
@@ -130,8 +161,8 @@ def decision() :
         """ Index numbers used to extract specific content from already existing inner html. This will hold through across cases."""
         data = str(request.data).split(',')
         # if flag is 1, then relation, else node
-        user_id = 1
-        onto_id = 1
+        user_id = session['userid']
+        onto_id = session['ontology']
         if data[0][-1] == "1" :
             #when a relationship is accepted/rejected
             Prop = data[1][8:-1]
@@ -164,14 +195,15 @@ def decision() :
 
 
 """ Serve file and new relationships from backend corresponding to the filename given in the URL """
-@app.route("/loadOntology/<path:filename>/", methods = ['GET'])
-def loadOntology(filename) :
+@app.route("/loadOntology/<path:file>/", methods = ['GET'])
+def loadOntology(file) :
     """ Serve files and new relations from the backend """
     """ Ontologies ready to be rendered saved in data/json """
 
     if 'credentials' not in session:
         return redirect('login')
 
+    filename = file + '.json'
     uploads = os.path.join(current_app.root_path,"data/json")
     uploads = uploads + "/" + str(filename)
 
@@ -179,6 +211,9 @@ def loadOntology(filename) :
     fname = fname.split(".")[0]
     fname = fname + ".txt"
 
+    result = db.engine.execute("SELECT id FROM ontologies WHERE name = :name", {'name': file})
+    onto_id = result.fetchone()['id']
+    session['ontology'] = onto_id
     """ Corresponding new relations for given ontology are stored in data/new. """
 
     new_relations, new_nodes = get_new_relations(os.path.join(current_app.root_path,"data/new")+ "/" + fname)
