@@ -323,6 +323,9 @@
         {% if hiddenJSONNode %}
         <div class="hidden" id="hiddenJSONNode" value='{{ hiddenJSONNode }}'>{{ hiddenJSONNode|tojson|safe }}</div>
         {% endif %}
+        {% if userId %}
+        <div class="hidden" id="userId" value='{{userId}}'>{{userId | tojson | safe }}</div>
+        {% endif %} 
     </main>
     <script src="{{ url_for('static', filename='js/d3.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/webvowl.js') }}"></script>
