@@ -58,7 +58,9 @@ module.exports = function (graphContainerSelector) {
         keepDetailsCollapsedOnLoading=true,
         adjustingGraphSize=false,
         zoom,
-        linkstate = [] ;
+        linkstate = [],
+        alreadyDecidedNodesIri =[],
+        alreadyDecidedRelations = [] ;
 
     /** --------------------------------------------------------- **/
     /** -- getter and setter definitions                       -- **/
@@ -94,6 +96,13 @@ module.exports = function (graphContainerSelector) {
     };
     graph.LinkState = function (){
         return linkstate ; 
+    }
+    graph.getAlreadyDecidedNodesIri = function () {
+        return alreadyDecidedNodesIri ;  
+    }
+
+    graph.getAlreadyDecidedRelations = function () {
+        return alreadyDecidedRelations ;  
     }
 
     // Returns the visible nodes
@@ -316,7 +325,37 @@ module.exports = function (graphContainerSelector) {
 
         updateHaloRadius();
     }
-
+    
+    // checks if the relationship selected is new
+	function isNew(linkstateprop){
+        console.log("Inside is new") ; 
+		var a = document.getElementById("hiddenJSONRel").innerHTML ; 
+		a = JSON.parse(a) ; 
+		var p = 1 
+		for( var i = 0 ; i < a.length ; i++)
+		{
+			if(linkstateprop.domain().iri() == a[i][0] && linkstateprop.iri() == a[i][1] && linkstateprop.range().iri() == a[i][3] && linkstateprop.type().split(':')[1] == a[i][2].split('/')[a[i][2].split('/').length - 1].split('#')[1])
+			{
+				return true ;
+			}
+		}
+		return false ; 
+    }
+    
+    // checks if node selected is new 
+	function isNewNode(linkstatenode){
+		var a = document.getElementById("hiddenJSONNode").innerHTML ; 
+		a = JSON.parse(a) ; 
+		for( var i = 0 ; i < a.length ; i++)
+		{
+			if(linkstatenode.iri() == a[i])
+			{
+				return true ;
+			}
+		}
+		return false ; 
+	}
+    
     function addClickEvents() {
         function executeModules(selectedElement) {
             options.selectionModules().forEach(function (module) {
@@ -357,29 +396,72 @@ module.exports = function (graphContainerSelector) {
         //     // parent.appendChild(reject);
         // });
 
-        nodeElements.on("click", function (clickedNode) {            
+        // selects elements on click and allows accept/reject option for only those nodes which are new, and a accept/reject hasn't been called on it.
+        nodeElements.on("click", function (clickedNode) {         
+            currentUserId = 1    
             executeModules(clickedNode);
+            var flagForDisplayAccRej = 1 ;
             var accept = d3.select("#acceptClicked").node();
             var reject = d3.select("#rejectClicked").node();
             accept.style.display = '';
             reject.style.display = '';
-            accept.type = "button";
-            reject.type = "button";
-            accept.value = "Accept";
-            reject.value = "Reject";
-
+            if(isNewNode(clickedNode)){
+                flagForDisplayAccRej = 1 ; 
+            }
+            else{
+                flagForDisplayAccRej = 0 ;
+            }
+            for( i = 0 ; alreadyDecidedNodesIri[i] != null ; ++i){
+                if (clickedNode.iri() == alreadyDecidedNodesIri[i][0] && currentUserId == alreadyDecidedNodesIri[i][1]) {
+                    flagForDisplayAccRej = 0 ;
+                }
+            }
+            if(flagForDisplayAccRej == 1){
+                accept.type = "button";
+                reject.type = "button";
+                accept.value = "Accept";
+                reject.value = "Reject";
+            }
+            else{ 
+                accept.style.display = "none" ; 
+                reject.style.display = "none" ;
+            }
         });
 
+        // selects elements on click and allows accept/reject option for only those relationships which are new, and a accept/reject hasn't been called on it.
         labelGroupElements.selectAll(".label").on("click", function (clickedProperty) {
+            currentUserId = 1    
             executeModules(clickedProperty);
+            var flagForDisplayAccRej = 1 ;
             var accept = d3.select("#acceptClicked").node();
             var reject = d3.select("#rejectClicked").node();
             accept.style.display = '';
             reject.style.display = '';
-            accept.type = "button";
-            reject.type = "button";
-            accept.value = "Accept";
-            reject.value = "Reject";
+            
+            if (isNew(clickedProperty))
+            {
+                flagForDisplayAccRej = 1
+            }
+            else {
+                flagForDisplayAccRej = 0 
+            }
+
+            for ( i = 0 ; alreadyDecidedRelations[i] != null ; ++i){
+                if (clickedProperty.iri() == alreadyDecidedRelations[i][0] && clickedProperty.domain().iri() == alreadyDecidedRelations[i][1] && clickedProperty.range().iri() == alreadyDecidedRelations[i][2] && clickedProperty.type() == alreadyDecidedRelations[i][3] && currentUserId == alreadyDecidedRelations[i][4]) {
+                        flagForDisplayAccRej = 0 ;
+                }
+            }
+
+            if(flagForDisplayAccRej == 1){
+                accept.type = "button";
+                reject.type = "button";
+                accept.value = "Accept";
+                reject.value = "Reject";
+            }
+            else{ 
+                accept.style.display = "none" ; 
+                reject.style.display = "none" ;
+            }
     });
 }
     /** Adjusts the containers current scale and position. */

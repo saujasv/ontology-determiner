@@ -330,6 +330,12 @@ module.exports = function () {
         return rv;
 	}
 
+	function clearDecisionOptions(){
+		var accept = d3.select("#acceptClicked").node();
+		var reject = d3.select("#rejectClicked").node();
+		accept.style.display = "none" ; 
+		reject.style.display = "none" ;
+	}
 
 	//Function to return the decision, domain, range, type, and name of the relationship accepted, or rejected.
 	function returnNameLink(){
@@ -339,6 +345,10 @@ module.exports = function () {
 			var rb = document.getElementById("typeProp").innerHTML ; 
 			var rc = document.getElementById("domain").getElementsByTagName("a")[0].href ; 
 			var rd = document.getElementById("range").getElementsByTagName("a")[0].href ; 
+			var decidedRelationList = graph.getAlreadyDecidedRelations() ; 
+			decidedRelationList.push([ra, rc, rd, rb, 1]) ; 
+			console.log(decidedRelationList) ; 
+			clearDecisionOptions() ; 
 			var flag = 1 ; 
 			var rdecision = "Reject" ; 
 			var xhr = new XMLHttpRequest();
@@ -349,6 +359,10 @@ module.exports = function () {
 			}
 			else if(document.getElementById("classSelectionInformation").className == ""){
 				var name = document.getElementById("name").getElementsByTagName("a")[0].href;
+				var decidedNodeList =  graph.getAlreadyDecidedNodesIri() ;
+				decidedNodeList.push([name, 1]) ; 
+				console.log(decidedNodeList) ; 
+				clearDecisionOptions() ; 
 				var flag = 0 ; 
 				var rdecision = "Reject" ; 
 				var xhr = new XMLHttpRequest() ; 
@@ -365,6 +379,10 @@ module.exports = function () {
 			var ab = document.getElementById("typeProp").innerHTML ; 
 			var ac = document.getElementById("domain").getElementsByTagName("a")[0].href ; 
 			var ad = document.getElementById("range").getElementsByTagName("a")[0].href ; 
+			var decidedRelationList = graph.getAlreadyDecidedRelations() ; 
+			decidedRelationList.push([aa, ac, ad, ab,1]) ; 
+			console.log(decidedRelationList) ; 
+			clearDecisionOptions() ; 
 			var flag = 1 ;
 			var adecision = "Accept" ; 
 			// console.log("accept") ; 
@@ -375,6 +393,10 @@ module.exports = function () {
 			}
 			else if(document.getElementById("classSelectionInformation").className == ""){
 				var name = document.getElementById("name").getElementsByTagName("a")[0].href;
+				var decidedNodeList = graph.getAlreadyDecidedNodesIri() ;
+				decidedNodeList.push([name, 1]) ; 
+				console.log(decidedNodeList) ; 
+				clearDecisionOptions() ; 
 				var flag = 0 ; 
 				var adecision = "Accept" ; 
 				var xhr = new XMLHttpRequest() ; 
@@ -393,8 +415,7 @@ module.exports = function () {
 		var p = 1 
 		for( var i = 0 ; i < a.length ; i++)
 		{
-			// console.log(linkstateprop.domain().iri())
-			if(linkstateprop.domain().iri() == a[i][0] && linkstateprop.iri() == a[i][1] && linkstateprop.range().iri() == a[i][3])
+			if(linkstateprop.domain().iri() == a[i][0] && linkstateprop.iri() == a[i][1] && linkstateprop.range().iri() == a[i][3] && linkstateprop.type().split(':')[1] == a[i][2].split('/')[a[i][2].split('/').length - 1].split('#')[1])
 			{
 				return true ;
 			}
@@ -423,8 +444,7 @@ module.exports = function () {
 		a = JSON.parse(a) ; 
 		for( var i = 0 ; i < a.length ; i++)
 		{
-			var b = a[i][2].split("/")
-			if(linkstatenode.iri() == a[i][0] && b.includes("owl#Class")==true)
+			if(linkstatenode.iri() == a[i])
 			{
 				return true ;
 			}
