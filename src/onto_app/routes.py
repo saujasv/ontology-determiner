@@ -141,7 +141,10 @@ def user():
 
     ontologies = get_ontologies_on_server()
 
-    # add_onto_file(1, "pizza", "./data/owl/pizza.owl", "./data/json/pizza.json", "./data/new/pizza.txt")
+    try:
+        add_onto_file(1, "pizza", "./data/owl/pizza.owl", "./data/json/pizza.json", "./data/new/pizza.txt")
+    except IntegrityError:
+        pass
     # return redirect(url_for('loadOntology', filename='pizza.json'))
     return render_template("ontologies.html", ontologies=ontologies, username=session['username'])
 
@@ -227,7 +230,7 @@ def loadOntology(file) :
         flash('Oops record not found')
         return redirect(url_for('hello'))
 
-    return render_template("index.html", OntologyContentJson = contents, hiddenJSONRel = new_relations, hiddenJSONNode = new_nodes, userId = 1 )
+    return render_template("index.html", OntologyContentJson = contents, hiddenJSONRel = new_relations, hiddenJSONNode = new_nodes, userId = session['userid'], username=session['username'] )
 
 
 # @app.route('/return-files/<path:filename>/', methods = ['GET', 'POST'])
