@@ -28,23 +28,28 @@ def add_onto_file(admin_id, name, filepath, json_path, new_relations_file):
     new_ontology_id = result.lastrowid
 
     # add new relations to database
-    new_relations = get_new_relations(new_relations_file)
+    new_relations, new_nodes = get_new_relations(new_relations_file)
     add_relations_to_db(new_relations, new_ontology_id)
+    add_nodes_to_db(new_nodes, new_ontology_id)
 
 def get_new_relations(filepath):
     d = dict()
     f = open(filepath, 'r')
     relations = list()
+    classes = list()
 
     # Each line of the new relations file is an RDF triple, so it is a
     # triple of the subject, predicate, and object
     # Create an adjacency list graph from the triples
     for l in f.readlines():
         s, p, o = l.split()
-        if s in d:
-            d[s].append((p, o))
+        if o == str(OWL.Class):
+            classes.append(s)
         else:
-            d[s] = [(p, o)]
+            if s in d:
+                d[s].append((p, o))
+            else:
+                d[s] = [(p, o)]
 
     # From the graph, find all restricitons (blank nodes) and get the relevant
     # relation data from them
@@ -64,15 +69,23 @@ def get_new_relations(filepath):
                             rang = o1
                     if quant == str(OWL.someValuesFrom):
                         relations.append((domain, prop, quant, rang))
+    return relations, classes
 
-    return relations
+def add_nodes_to_db(nodes, onto_id):
+    insert_query = """INSERT INTO
+                    nodes (name, onto_id)
+                    VALUES (:name, :onto_id)"""
+    args = {'name': None, 'onto_id': onto_id}
+    for n in nodes:
+        args['name'] = n
+        result = db.engine.execute(insert_query, args)
 
 def add_relations_to_db(relations, onto_id):
     insert_query = """INSERT INTO
                     class_relations (domain, property, quantifier, range, onto_id)
                     VALUES (:domain, :property, :quantifier, :range, :onto_id)"""
     args = {'domain': None, 'property': None, 'quantifier': None, 'range': None, 'onto_id': onto_id}
-    print("#relations = ", len(relations))
+    # print("#relations = ", len(relations))
     for r in relations:
         args['domain'] = r[0]
         args['property'] = r[1]
@@ -80,7 +93,7 @@ def add_relations_to_db(relations, onto_id):
         args['range'] = r[3]
         result = db.engine.execute(insert_query, args)
 
-def add_decision(user_id, property, domain, range, quantifier, onto_id, decision):
+def add_relation_decision(user_id, property, domain, range, quantifier, onto_id, decision):
     relation_query = """SELECT id FROM class_relations
                         WHERE onto_id = :onto_id
                             AND property = :property
@@ -102,6 +115,27 @@ def add_decision(user_id, property, domain, range, quantifier, onto_id, decision
                         VALUES (:relation_id, :user_id, :approved)"""
     result = db.engine.execute(insert_query, {
         'relation_id': relation_id,
+        'user_id': user_id,
+        'approved': decision
+    })
+
+def add_node_decision(user_id, name, onto_id, decision):
+    relation_query = """SELECT id FROM nodes
+                        WHERE onto_id = :onto_id
+                            AND name = :name"""
+
+    result = db.engine.execute(relation_query, {
+        'onto_id': onto_id,
+        'name': name,
+    })
+
+    node_id = result.fetchone()['id']
+
+    insert_query = """INSERT INTO node_decisions
+                        (node_id, user_id, approved)
+                        VALUES (:node_id, :user_id, :approved)"""
+    result = db.engine.execute(insert_query, {
+        'node_id': node_id,
         'user_id': user_id,
         'approved': decision
     })

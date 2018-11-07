@@ -21,26 +21,10 @@
         "value" : "Creative Commons Attribution 3.0 (CC BY 3.0)",
         "type" : "label"
       } ],
-      "provenance" : [ {
-        "identifier" : "provenance",
-        "language" : "en",
-        "value" : "v2.0 Added new annotations to the ontology using standard/well-know annotation properties\n\nv1.5. Removed protege.owl import and references. Made ontology URI date-independent\n\nv1.4. Added Food class (used in domain/range of hasIngredient), Added several hasCountryOfOrigin restrictions on pizzas, Made hasTopping invers functional",
-        "type" : "label"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Robert Stevens",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
         "value" : "Nick Drummond",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Horridge",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -51,6 +35,22 @@
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Alan Rector",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Horridge",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Robert Stevens",
+        "type" : "label"
+      } ],
+      "provenance" : [ {
+        "identifier" : "provenance",
+        "language" : "en",
+        "value" : "v2.0 Added new annotations to the ontology using standard/well-know annotation properties\n\nv1.5. Removed protege.owl import and references. Made ontology URI date-independent\n\nv1.4. Added Food class (used in domain/range of hasIngredient), Added several hasCountryOfOrigin restrictions on pizzas, Made hasTopping invers functional",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -543,12 +543,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Capricciosa",
+        "value" : "Capricciosa Pizza",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Capricciosa Pizza",
+        "value" : "Capricciosa",
         "type" : "label"
       } ]
     },
@@ -615,12 +615,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Parmese Pizza",
+        "value" : "Parmese",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Parmese",
+        "value" : "Parmese Pizza",
         "type" : "label"
       } ]
     },
@@ -697,12 +697,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Cajun",
+        "value" : "Cajun Pizza",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Cajun Pizza",
+        "value" : "Cajun",
         "type" : "label"
       } ]
     },
@@ -797,12 +797,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Margherita",
+        "value" : "Margherita Pizza",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Margherita Pizza",
+        "value" : "Margherita",
         "type" : "label"
       } ]
     },
@@ -828,12 +828,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "American Pizza",
+        "value" : "American",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "American",
+        "value" : "American Pizza",
         "type" : "label"
       } ]
     },
@@ -859,12 +859,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Giardiniera",
+        "value" : "Giardiniera Pizza",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Giardiniera Pizza",
+        "value" : "Giardiniera",
         "type" : "label"
       } ]
     },
@@ -1177,12 +1177,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Mushroom Pizza",
+        "value" : "Mushroom",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Mushroom",
+        "value" : "Mushroom Pizza",
         "type" : "label"
       } ]
     },
@@ -1549,12 +1549,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Frutti Di Mare",
+        "value" : "Frutti Di Mare Pizza",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Frutti Di Mare Pizza",
+        "value" : "Frutti Di Mare",
         "type" : "label"
       } ]
     },
@@ -1881,12 +1881,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Pollo Ad Astra",
+        "value" : "Pollo Ad Astra Pizza",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Pollo Ad Astra Pizza",
+        "value" : "Pollo Ad Astra",
         "type" : "label"
       } ]
     },
@@ -2617,12 +2617,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Veneziana Pizza",
+        "value" : "Veneziana",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Veneziana",
+        "value" : "Veneziana Pizza",
         "type" : "label"
       } ]
     },
@@ -4644,12 +4644,12 @@
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "0"
   }, {
     "range" : "4",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "3"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -4664,7 +4664,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "5"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -4679,22 +4679,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "10"
   }, {
     "range" : "15",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "13"
   }, {
     "range" : "17",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "16"
   }, {
     "range" : "19",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "18"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -4709,7 +4709,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "20"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -4724,22 +4724,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "22"
   }, {
     "range" : "15",
     "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "23"
   }, {
     "range" : "26",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "25"
   }, {
     "range" : "26",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -4754,27 +4754,27 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "28"
   }, {
     "range" : "32",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
     "range" : "7",
     "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
     "range" : "36",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "35"
   }, {
     "range" : "17",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "37"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -4789,7 +4789,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "38"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -4802,22 +4802,22 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "40"
   }, {
     "range" : "7",
     "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "43"
   }, {
     "range" : "46",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "45"
   }, {
     "range" : "17",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "47"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -4832,7 +4832,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "48"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -4845,17 +4845,17 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "49"
   }, {
     "range" : "2",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "50"
   }, {
     "range" : "17",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "52"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -4870,27 +4870,27 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "53"
   }, {
     "range" : "2",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
     "range" : "17",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "56"
   }, {
     "range" : "19",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "57"
   }, {
     "range" : "62",
     "domain" : "61",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "60"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -4905,12 +4905,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "63"
   }, {
     "range" : "62",
     "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -4923,7 +4923,7 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "66"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -4936,22 +4936,22 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "69"
   }, {
     "range" : "15",
     "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "71"
   }, {
     "range" : "36",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "73"
   }, {
     "range" : "75",
     "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "74"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -4966,22 +4966,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "76"
   }, {
     "range" : "15",
     "domain" : "78",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "77"
   }, {
     "range" : "2",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "79"
   }, {
     "range" : "46",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "81"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -4994,7 +4994,7 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "82"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5009,22 +5009,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "83"
   }, {
     "range" : "15",
     "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "84"
   }, {
     "range" : "2",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "86"
   }, {
     "range" : "51",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "88"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5039,7 +5039,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "89"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5054,22 +5054,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "90"
   }, {
     "range" : "15",
     "domain" : "92",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "91"
   }, {
     "range" : "94",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "93"
   }, {
     "range" : "26",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "95"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -5082,7 +5082,7 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "96"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -5095,22 +5095,22 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "98"
   }, {
     "range" : "102",
     "domain" : "101",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "100"
   }, {
     "range" : "19",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "103"
   }, {
     "range" : "36",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "104"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5125,7 +5125,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "105"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5140,22 +5140,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "107"
   }, {
     "range" : "102",
     "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "109"
   }, {
     "range" : "2",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "110"
   }, {
     "range" : "46",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "112"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5170,7 +5170,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "113"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5185,22 +5185,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "115"
   }, {
     "range" : "102",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "116"
   }, {
     "range" : "2",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "117"
   }, {
     "range" : "51",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "119"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5215,7 +5215,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "120"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -5228,22 +5228,22 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "121"
   }, {
     "range" : "62",
     "domain" : "123",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "122"
   }, {
     "range" : "2",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "124"
   }, {
     "range" : "4",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "126"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5258,7 +5258,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "127"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5273,22 +5273,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "128"
   }, {
     "range" : "62",
     "domain" : "130",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "129"
   }, {
     "range" : "2",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "131"
   }, {
     "range" : "19",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "133"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5303,7 +5303,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "134"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5318,17 +5318,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "136"
   }, {
     "range" : "2",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "137"
   }, {
     "range" : "17",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "138"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5343,27 +5343,27 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "139"
   }, {
     "range" : "64",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "141"
   }, {
     "range" : "26",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "142"
   }, {
     "range" : "11",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "144"
   }, {
     "range" : "148",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "147"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5378,17 +5378,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "149"
   }, {
     "range" : "148",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "150"
   }, {
     "range" : "153",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "151"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5403,22 +5403,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "154"
   }, {
     "range" : "148",
     "domain" : "156",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "155"
   }, {
     "range" : "1",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "157"
   }, {
     "range" : "153",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "158"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5433,27 +5433,27 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "159"
   }, {
     "range" : "148",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "160"
   }, {
     "range" : "94",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "161"
   }, {
     "range" : "17",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "162"
   }, {
     "range" : "7",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "163"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5468,122 +5468,122 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "164"
   }, {
     "range" : "148",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "165"
   }, {
     "range" : "80",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "166"
   }, {
     "range" : "140",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "167"
   }, {
     "range" : "170",
     "domain" : "169",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "168"
   }, {
     "range" : "148",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "171"
   }, {
     "range" : "80",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "172"
   }, {
     "range" : "174",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "173"
   }, {
     "range" : "176",
     "domain" : "169",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "175"
   }, {
     "range" : "148",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "177"
   }, {
     "range" : "17",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "178"
   }, {
     "range" : "153",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "179"
   }, {
     "range" : "59",
     "domain" : "170",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "180"
   }, {
     "range" : "148",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "181"
   }, {
     "range" : "26",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "182"
   }, {
     "range" : "152",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "183"
   }, {
     "range" : "176",
     "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "184"
   }, {
     "range" : "148",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "185"
   }, {
     "range" : "36",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "186"
   }, {
     "range" : "7",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "187"
   }, {
     "range" : "176",
     "domain" : "170",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "188"
   }, {
     "range" : "148",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "189"
   }, {
     "range" : "46",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "190"
   }, {
     "range" : "153",
     "domain" : "174",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "191"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -5596,22 +5596,22 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "192"
   }, {
     "range" : "148",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "193"
   }, {
     "range" : "80",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "194"
   }, {
     "range" : "174",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "195"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5626,27 +5626,27 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "196"
   }, {
     "range" : "4",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "197"
   }, {
     "range" : "174",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "198"
   }, {
     "range" : "19",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "199"
   }, {
     "range" : "148",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "200"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -5659,17 +5659,17 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "201"
   }, {
     "range" : "148",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "203"
   }, {
     "range" : "153",
     "domain" : "140",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "204"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -5684,182 +5684,182 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "205"
   }, {
     "range" : "148",
     "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "207"
   }, {
     "range" : "11",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "208"
   }, {
     "range" : "140",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "209"
   }, {
     "range" : "59",
     "domain" : "169",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "210"
   }, {
     "range" : "148",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "211"
   }, {
     "range" : "19",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "212"
   }, {
     "range" : "70",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "213"
   }, {
     "range" : "61",
     "domain" : "130",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "214"
   }, {
     "range" : "148",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "215"
   }, {
     "range" : "11",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "216"
   }, {
     "range" : "140",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "217"
   }, {
     "range" : "54",
     "domain" : "123",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "218"
   }, {
     "range" : "148",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "219"
   }, {
     "range" : "11",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "220"
   }, {
     "range" : "21",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "221"
   }, {
     "range" : "130",
     "domain" : "123",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "222"
   }, {
     "range" : "148",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "223"
   }, {
     "range" : "11",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "224"
   }, {
     "range" : "174",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "225"
   }, {
     "range" : "54",
     "domain" : "130",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "226"
   }, {
     "range" : "148",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "227"
   }, {
     "range" : "17",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "228"
   }, {
     "range" : "153",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "229"
   }, {
     "range" : "68",
     "domain" : "101",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "230"
   }, {
     "range" : "148",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "231"
   }, {
     "range" : "26",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "233"
   }, {
     "range" : "21",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "234"
   }, {
     "range" : "68",
     "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "235"
   }, {
     "range" : "148",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "236"
   }, {
     "range" : "11",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "237"
   }, {
     "range" : "7",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "238"
   }, {
     "range" : "42",
     "domain" : "101",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "239"
   }, {
     "range" : "148",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "240"
   }, {
     "range" : "11",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "241"
   }, {
     "range" : "140",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "242"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -5872,97 +5872,97 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "243"
   }, {
     "range" : "11",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "245"
   }, {
     "range" : "174",
     "domain" : "140",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "246"
   }, {
     "range" : "11",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "247"
   }, {
     "range" : "253",
     "domain" : "252",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "251"
   }, {
     "range" : "61",
     "domain" : "123",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "254"
   }, {
     "range" : "253",
     "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "255"
   }, {
     "range" : "70",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "256"
   }, {
     "range" : "54",
     "domain" : "61",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "257"
   }, {
     "range" : "140",
     "domain" : "259",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "258"
   }, {
     "range" : "125",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "260"
   }, {
     "range" : "97",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "261"
   }, {
     "range" : "202",
     "domain" : "252",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "262"
   }, {
     "range" : "1",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "263"
   }, {
     "range" : "97",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "264"
   }, {
     "range" : "268",
     "domain" : "267",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "266"
   }, {
     "range" : "17",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "269"
   }, {
     "range" : "97",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "270"
   }, {
     "range" : "26",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "271"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasCountryOfOrigin",
@@ -5972,32 +5972,32 @@
       "IRI-based" : "hasCountryOfOrigin"
     },
     "domain" : "273",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "272"
   }, {
     "range" : "41",
     "domain" : "275",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "274"
   }, {
     "range" : "21",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "276"
   }, {
     "range" : "279",
     "domain" : "275",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "278"
   }, {
     "range" : "19",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "280"
   }, {
     "range" : "140",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "281"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -6010,147 +6010,147 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "282"
   }, {
     "range" : "132",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "284"
   }, {
     "range" : "277",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "285"
   }, {
     "range" : "283",
     "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "286"
   }, {
     "range" : "125",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "287"
   }, {
     "range" : "174",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "288"
   }, {
     "range" : "283",
     "domain" : "202",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "289"
   }, {
     "range" : "64",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "290"
   }, {
     "range" : "153",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "291"
   }, {
     "range" : "283",
     "domain" : "252",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "292"
   }, {
     "range" : "11",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "293"
   }, {
     "range" : "152",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "294"
   }, {
     "range" : "29",
     "domain" : "202",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "295"
   }, {
     "range" : "80",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "296"
   }, {
     "range" : "7",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "297"
   }, {
     "range" : "29",
     "domain" : "252",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "298"
   }, {
     "range" : "26",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "299"
   }, {
     "range" : "12",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "300"
   }, {
     "range" : "279",
     "domain" : "253",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "301"
   }, {
     "range" : "36",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "302"
   }, {
     "range" : "265",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "303"
   }, {
     "range" : "275",
     "domain" : "253",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "304"
   }, {
     "range" : "46",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "305"
   }, {
     "range" : "99",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "306"
   }, {
     "range" : "279",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "307"
   }, {
     "range" : "51",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "308"
   }, {
     "range" : "70",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "309"
   }, {
     "range" : "4",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "310"
   }, {
     "range" : "279",
     "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "311"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6165,62 +6165,62 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "312"
   }, {
     "range" : "275",
     "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "313"
   }, {
     "range" : "11",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "314"
   }, {
     "range" : "248",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "315"
   }, {
     "range" : "250",
     "domain" : "253",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "316"
   }, {
     "range" : "80",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "317"
   }, {
     "range" : "39",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "318"
   }, {
     "range" : "250",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "319"
   }, {
     "range" : "118",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "320"
   }, {
     "range" : "248",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "321"
   }, {
     "range" : "250",
     "domain" : "279",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "322"
   }, {
     "range" : "1",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "323"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -6233,42 +6233,42 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "324"
   }, {
     "range" : "250",
     "domain" : "275",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "325"
   }, {
     "range" : "17",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "326"
   }, {
     "range" : "97",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "327"
   }, {
     "range" : "41",
     "domain" : "253",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "328"
   }, {
     "range" : "4",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "329"
   }, {
     "range" : "19",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "330"
   }, {
     "range" : "249",
     "domain" : "275",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "331"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6283,12 +6283,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "332"
   }, {
     "range" : "19",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "333"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6303,12 +6303,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "334"
   }, {
     "range" : "250",
     "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "335"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6323,12 +6323,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "336"
   }, {
     "range" : "125",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "337"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6343,12 +6343,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "338"
   }, {
     "range" : "206",
     "domain" : "253",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "339"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6363,12 +6363,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "340"
   }, {
     "range" : "132",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "341"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6383,17 +6383,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "342"
   }, {
     "range" : "41",
     "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "343"
   }, {
     "range" : "118",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "344"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6408,12 +6408,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "345"
   }, {
     "range" : "64",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "346"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -6426,12 +6426,12 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "347"
   }, {
     "range" : "15",
     "domain" : "275",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "348"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase",
@@ -6443,17 +6443,17 @@
     },
     "superproperty" : [ "9" ],
     "domain" : "59",
-    "attributes" : [ "object", "functional", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "functional", "external", "object" ],
     "id" : "349"
   }, {
     "range" : "46",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "351"
   }, {
     "range" : "249",
     "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "352"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6468,22 +6468,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "353"
   }, {
     "range" : "26",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "354"
   }, {
     "range" : "46",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "355"
   }, {
     "range" : "250",
     "domain" : "249",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "356"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6498,22 +6498,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "357"
   }, {
     "range" : "36",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "358"
   }, {
     "range" : "19",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "359"
   }, {
     "range" : "249",
     "domain" : "253",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "360"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6528,22 +6528,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "361"
   }, {
     "range" : "46",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "362"
   }, {
     "range" : "4",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "363"
   }, {
     "range" : "41",
     "domain" : "249",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "364"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6558,22 +6558,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "365"
   }, {
     "range" : "51",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "366"
   }, {
     "range" : "19",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "367"
   }, {
     "range" : "279",
     "domain" : "249",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "368"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6588,22 +6588,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "369"
   }, {
     "range" : "108",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "370"
   }, {
     "range" : "26",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "371"
   }, {
     "range" : "15",
     "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "372"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6618,22 +6618,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "373"
   }, {
     "range" : "64",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "374"
   }, {
     "range" : "26",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "375"
   }, {
     "range" : "250",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "376"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -6646,22 +6646,22 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "377"
   }, {
     "range" : "11",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "378"
   }, {
     "range" : "36",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "379"
   }, {
     "range" : "15",
     "domain" : "253",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "380"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -6674,22 +6674,22 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "381"
   }, {
     "range" : "80",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "382"
   }, {
     "range" : "36",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "383"
   }, {
     "range" : "15",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "384"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -6702,22 +6702,22 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "385"
   }, {
     "range" : "87",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "386"
   }, {
     "range" : "36",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "387"
   }, {
     "range" : "279",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "388"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6732,22 +6732,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "inverse functional", "external" ],
+    "attributes" : [ "inverse functional", "external", "object" ],
     "id" : "389"
   }, {
     "range" : "1",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "391"
   }, {
     "range" : "19",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "392"
   }, {
     "range" : "17",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "393"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -6760,7 +6760,7 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "394"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6775,7 +6775,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "395"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -6788,12 +6788,12 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "396"
   }, {
     "range" : "17",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "398"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6808,7 +6808,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "399"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6823,17 +6823,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "400"
   }, {
     "range" : "118",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "401"
   }, {
     "range" : "26",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "402"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6848,7 +6848,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "403"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6863,17 +6863,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "404"
   }, {
     "range" : "125",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "405"
   }, {
     "range" : "26",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "406"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6888,7 +6888,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "407"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6903,22 +6903,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "408"
   }, {
     "range" : "132",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "409"
   }, {
     "range" : "26",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "410"
   }, {
     "range" : "15",
     "domain" : "249",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "411"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6933,17 +6933,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "412"
   }, {
     "range" : "146",
     "domain" : "170",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "413"
   }, {
     "range" : "156",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "414"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6958,12 +6958,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "415"
   }, {
     "range" : "146",
     "domain" : "176",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "416"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -6976,7 +6976,7 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "417"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -6991,7 +6991,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "418"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7006,7 +7006,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "419"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7021,7 +7021,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "420"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7036,7 +7036,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "421"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7051,7 +7051,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "422"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7066,7 +7066,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "423"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7081,7 +7081,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "424"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -7094,22 +7094,22 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "425"
   }, {
     "range" : "156",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "427"
   }, {
     "range" : "156",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "428"
   }, {
     "range" : "156",
     "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "429"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase",
@@ -7121,47 +7121,47 @@
     },
     "superproperty" : [ "9" ],
     "domain" : "59",
-    "attributes" : [ "object", "functional", "inverse functional", "external" ],
+    "attributes" : [ "inverse functional", "functional", "external", "object" ],
     "id" : "430"
   }, {
     "range" : "19",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "431"
   }, {
     "range" : "156",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "432"
   }, {
     "range" : "156",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "433"
   }, {
     "range" : "46",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "434"
   }, {
     "range" : "36",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "435"
   }, {
     "range" : "232",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "436"
   }, {
     "range" : "232",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "437"
   }, {
     "range" : "275",
     "domain" : "140",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "438"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7176,12 +7176,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "439"
   }, {
     "range" : "275",
     "domain" : "153",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "440"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7196,12 +7196,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "442"
   }, {
     "range" : "275",
     "domain" : "174",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "443"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7216,12 +7216,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "444"
   }, {
     "range" : "61",
     "domain" : "244",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "445"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7236,12 +7236,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "446"
   }, {
     "range" : "249",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "447"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7256,12 +7256,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "448"
   }, {
     "range" : "249",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "449"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7276,12 +7276,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "450"
   }, {
     "range" : "249",
     "domain" : "248",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "451"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase",
@@ -7293,12 +7293,12 @@
     },
     "superproperty" : [ "9" ],
     "domain" : "143",
-    "attributes" : [ "object", "functional", "inverse functional", "external", "allValues" ],
+    "attributes" : [ "allValues", "inverse functional", "functional", "external", "object" ],
     "id" : "452"
   }, {
     "range" : "29",
     "domain" : "397",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "453"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -7311,12 +7311,12 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "454"
   }, {
     "range" : "146",
     "domain" : "169",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "455"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7331,12 +7331,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "456"
   }, {
     "range" : "146",
     "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "457"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7351,277 +7351,277 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "458"
   }, {
     "range" : "17",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "459"
   }, {
     "range" : "232",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "460"
   }, {
     "range" : "26",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "461"
   }, {
     "range" : "11",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "462"
   }, {
     "range" : "232",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "463"
   }, {
     "range" : "232",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "464"
   }, {
     "range" : "232",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "465"
   }, {
     "range" : "232",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "466"
   }, {
     "range" : "232",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "467"
   }, {
     "range" : "232",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "468"
   }, {
     "range" : "106",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "469"
   }, {
     "range" : "106",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "470"
   }, {
     "range" : "106",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "471"
   }, {
     "range" : "275",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "472"
   }, {
     "range" : "275",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "473"
   }, {
     "range" : "275",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "474"
   }, {
     "range" : "275",
     "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "475"
   }, {
     "range" : "275",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "476"
   }, {
     "range" : "275",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "477"
   }, {
     "range" : "275",
     "domain" : "97",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "478"
   }, {
     "range" : "275",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "479"
   }, {
     "range" : "275",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "480"
   }, {
     "range" : "275",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "481"
   }, {
     "range" : "106",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "483"
   }, {
     "range" : "106",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "484"
   }, {
     "range" : "106",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "485"
   }, {
     "range" : "106",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "486"
   }, {
     "range" : "156",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "487"
   }, {
     "range" : "156",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "488"
   }, {
     "range" : "156",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "489"
   }, {
     "range" : "156",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "490"
   }, {
     "range" : "156",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "491"
   }, {
     "range" : "26",
     "domain" : "156",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "492"
   }, {
     "range" : "206",
     "domain" : "482",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "493"
   }, {
     "range" : "176",
     "domain" : "253",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "494"
   }, {
     "range" : "176",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "495"
   }, {
     "range" : "176",
     "domain" : "249",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "496"
   }, {
     "range" : "176",
     "domain" : "250",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "497"
   }, {
     "range" : "176",
     "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "498"
   }, {
     "range" : "176",
     "domain" : "279",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "499"
   }, {
     "range" : "176",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "500"
   }, {
     "range" : "176",
     "domain" : "275",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "501"
   }, {
     "range" : "275",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "502"
   }, {
     "range" : "17",
     "domain" : "156",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "503"
   }, {
     "range" : "156",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "504"
   }, {
     "range" : "11",
     "domain" : "156",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "505"
   }, {
     "range" : "156",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "506"
   }, {
     "range" : "156",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "507"
   }, {
     "range" : "156",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "508"
   }, {
     "range" : "156",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "509"
   }, {
     "range" : "156",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "510"
   }, {
     "range" : "156",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "511"
   }, {
     "range" : "6",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "512"
   }, {
     "range" : "99",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "513"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7636,22 +7636,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "514"
   }, {
     "range" : "250",
     "domain" : "75",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "515"
   }, {
     "range" : "6",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "516"
   }, {
     "range" : "174",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "517"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7666,22 +7666,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "518"
   }, {
     "range" : "390",
     "domain" : "102",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "519"
   }, {
     "range" : "11",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "520"
   }, {
     "range" : "153",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "521"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7696,22 +7696,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "522"
   }, {
     "range" : "170",
     "domain" : "268",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "523"
   }, {
     "range" : "6",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "524"
   }, {
     "range" : "99",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "525"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7726,17 +7726,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "526"
   }, {
     "range" : "170",
     "domain" : "267",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "527"
   }, {
     "range" : "7",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "528"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7751,17 +7751,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "529"
   }, {
     "range" : "41",
     "domain" : "441",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "530"
   }, {
     "range" : "70",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "531"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7776,22 +7776,22 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "532"
   }, {
     "range" : "279",
     "domain" : "114",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "533"
   }, {
     "range" : "6",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "534"
   }, {
     "range" : "70",
     "domain" : "140",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "535"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7806,17 +7806,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "536"
   }, {
     "range" : "253",
     "domain" : "283",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "537"
   }, {
     "range" : "70",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "538"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -7829,17 +7829,17 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "539"
   }, {
     "range" : "253",
     "domain" : "202",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "540"
   }, {
     "range" : "70",
     "domain" : "174",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "541"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -7852,47 +7852,47 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "542"
   }, {
     "range" : "153",
     "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "543"
   }, {
     "range" : "6",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "544"
   }, {
     "range" : "6",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "545"
   }, {
     "range" : "19",
     "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "546"
   }, {
     "range" : "106",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "547"
   }, {
     "range" : "6",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "548"
   }, {
     "range" : "59",
     "domain" : "148",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "549"
   }, {
     "range" : "94",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "550"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7907,17 +7907,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "551"
   }, {
     "range" : "250",
     "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "552"
   }, {
     "range" : "106",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "553"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7932,7 +7932,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "554"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7947,17 +7947,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "555"
   }, {
     "range" : "26",
     "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "556"
   }, {
     "range" : "21",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "557"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7972,7 +7972,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "558"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -7987,17 +7987,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "559"
   }, {
     "range" : "106",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "560"
   }, {
     "range" : "140",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "561"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8012,7 +8012,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "562"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8027,17 +8027,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "563"
   }, {
     "range" : "106",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "564"
   }, {
     "range" : "265",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "565"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8052,7 +8052,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "566"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8067,12 +8067,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "567"
   }, {
     "range" : "174",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "568"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8087,7 +8087,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "569"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8102,12 +8102,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "570"
   }, {
     "range" : "153",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "571"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8122,12 +8122,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "572"
   }, {
     "range" : "152",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "573"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8142,12 +8142,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "574"
   }, {
     "range" : "7",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "576"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8162,17 +8162,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "577"
   }, {
     "range" : "145",
     "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "578"
   }, {
     "range" : "70",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "579"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8187,17 +8187,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "580"
   }, {
     "range" : "59",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "581"
   }, {
     "range" : "21",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "582"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -8210,47 +8210,47 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "583"
   }, {
     "range" : "140",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "584"
   }, {
     "range" : "106",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "585"
   }, {
     "range" : "106",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "586"
   }, {
     "range" : "17",
     "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "587"
   }, {
     "range" : "106",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "588"
   }, {
     "range" : "106",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "589"
   }, {
     "range" : "106",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "591"
   }, {
     "range" : "11",
     "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "592"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8265,12 +8265,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "593"
   }, {
     "range" : "94",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "594"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8285,17 +8285,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "595"
   }, {
     "range" : "94",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "596"
   }, {
     "range" : "78",
     "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "597"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8310,17 +8310,17 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "598"
   }, {
     "range" : "17",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "599"
   }, {
     "range" : "78",
     "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "600"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -8333,17 +8333,17 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "601"
   }, {
     "range" : "94",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "602"
   }, {
     "range" : "24",
     "domain" : "78",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "603"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -8356,17 +8356,17 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "604"
   }, {
     "range" : "94",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "605"
   }, {
     "range" : "92",
     "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "606"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -8379,12 +8379,12 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "607"
   }, {
     "range" : "92",
     "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "608"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -8397,17 +8397,17 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "609"
   }, {
     "range" : "11",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "610"
   }, {
     "range" : "24",
     "domain" : "92",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "611"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -8420,17 +8420,17 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "612"
   }, {
     "range" : "94",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "613"
   }, {
     "range" : "72",
     "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "614"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -8443,12 +8443,12 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "615"
   }, {
     "range" : "24",
     "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "616"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8463,12 +8463,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "617"
   }, {
     "range" : "24",
     "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "618"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8483,7 +8483,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "619"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8498,52 +8498,52 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "620"
   }, {
     "range" : "94",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "621"
   }, {
     "range" : "94",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "622"
   }, {
     "range" : "94",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "623"
   }, {
     "range" : "94",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "624"
   }, {
     "range" : "6",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "625"
   }, {
     "range" : "6",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "626"
   }, {
     "range" : "44",
     "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "627"
   }, {
     "range" : "94",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "628"
   }, {
     "range" : "390",
     "domain" : "145",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "629"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8558,12 +8558,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "630"
   }, {
     "range" : "19",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "631"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8578,7 +8578,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "632"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8593,7 +8593,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "633"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8608,7 +8608,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "634"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8623,7 +8623,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "635"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8638,7 +8638,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "636"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8653,12 +8653,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "637"
   }, {
     "range" : "6",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "638"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8673,7 +8673,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "639"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8688,12 +8688,12 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "640"
   }, {
     "range" : "36",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "641"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8708,7 +8708,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "642"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8723,7 +8723,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "643"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8738,7 +8738,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "644"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8753,7 +8753,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "645"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -8766,7 +8766,7 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "646"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8781,7 +8781,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "647"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -8794,7 +8794,7 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
+    "attributes" : [ "someValues", "functional", "external", "object" ],
     "id" : "648"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -8809,52 +8809,52 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "649"
   }, {
     "range" : "78",
     "domain" : "92",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "650"
   }, {
     "range" : "26",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "651"
   }, {
     "range" : "6",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "652"
   }, {
     "range" : "6",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "653"
   }, {
     "range" : "17",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "654"
   }, {
     "range" : "6",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "655"
   }, {
     "range" : "36",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "656"
   }, {
     "range" : "26",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "657"
   }, {
     "range" : "94",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "658"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf",
@@ -8868,7 +8868,7 @@
     "comment" : {
       "en" : "The inverse property tree to hasIngredient - all subproperties and attributes of the properties should reflect those under hasIngredient."
     },
-    "attributes" : [ "object", "transitive", "external" ],
+    "attributes" : [ "transitive", "external", "object" ],
     "id" : "660"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#isBaseOf",
@@ -8879,62 +8879,62 @@
     },
     "superproperty" : [ "660" ],
     "domain" : "273",
-    "attributes" : [ "object", "functional", "inverse functional", "external" ],
+    "attributes" : [ "inverse functional", "functional", "external", "object" ],
     "id" : "350"
   }, {
     "range" : "11",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "661"
   }, {
     "range" : "64",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "662"
   }, {
     "range" : "64",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "663"
   }, {
     "range" : "64",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "664"
   }, {
     "range" : "17",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "665"
   }, {
     "range" : "26",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "666"
   }, {
     "range" : "36",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "667"
   }, {
     "range" : "46",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "668"
   }, {
     "range" : "64",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "669"
   }, {
     "range" : "64",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "670"
   }, {
     "range" : "19",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "671"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness",
@@ -8947,7 +8947,7 @@
     "comment" : {
       "en" : "A property created to be used with the ValuePartition - Spiciness."
     },
-    "attributes" : [ "object", "functional", "external" ],
+    "attributes" : [ "functional", "external", "object" ],
     "id" : "672"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#isToppingOf",
@@ -8961,67 +8961,67 @@
     "comment" : {
       "en" : "Any given instance of topping should only be added to a single pizza (no cheap half-measures on our pizzas)"
     },
-    "attributes" : [ "object", "functional", "external" ],
+    "attributes" : [ "functional", "external", "object" ],
     "id" : "8"
   }, {
     "range" : "80",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "673"
   }, {
     "range" : "87",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "674"
   }, {
     "range" : "1",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "675"
   }, {
     "range" : "17",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "676"
   }, {
     "range" : "26",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "677"
   }, {
     "range" : "36",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "679"
   }, {
     "range" : "46",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "680"
   }, {
     "range" : "51",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "681"
   }, {
     "range" : "4",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "682"
   }, {
     "range" : "64",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "683"
   }, {
     "range" : "70",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "684"
   }, {
     "range" : "11",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "685"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient",
@@ -9036,192 +9036,192 @@
     "comment" : {
       "en" : "NB Transitive - the ingredients of ingredients are ingredients of the whole"
     },
-    "attributes" : [ "object", "transitive", "external" ],
+    "attributes" : [ "transitive", "external", "object" ],
     "id" : "9"
   }, {
     "range" : "70",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "689"
   }, {
     "range" : "132",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "690"
   }, {
     "range" : "21",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "691"
   }, {
     "range" : "17",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "692"
   }, {
     "range" : "140",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "693"
   }, {
     "range" : "26",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "694"
   }, {
     "range" : "12",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "695"
   }, {
     "range" : "36",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "696"
   }, {
     "range" : "174",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "697"
   }, {
     "range" : "46",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "698"
   }, {
     "range" : "153",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "699"
   }, {
     "range" : "51",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "700"
   }, {
     "range" : "12",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "701"
   }, {
     "range" : "4",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "702"
   }, {
     "range" : "7",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "703"
   }, {
     "range" : "19",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "704"
   }, {
     "range" : "99",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "705"
   }, {
     "range" : "11",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "706"
   }, {
     "range" : "12",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "707"
   }, {
     "range" : "80",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "708"
   }, {
     "range" : "12",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "709"
   }, {
     "range" : "132",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "710"
   }, {
     "range" : "70",
     "domain" : "97",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "711"
   }, {
     "range" : "36",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "712"
   }, {
     "range" : "97",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "713"
   }, {
     "range" : "46",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "714"
   }, {
     "range" : "140",
     "domain" : "97",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "715"
   }, {
     "range" : "51",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "716"
   }, {
     "range" : "97",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "717"
   }, {
     "range" : "4",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "718"
   }, {
     "range" : "174",
     "domain" : "97",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "719"
   }, {
     "range" : "19",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "720"
   }, {
     "range" : "153",
     "domain" : "97",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "721"
   }, {
     "range" : "132",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "722"
   }, {
     "range" : "97",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "723"
   }, {
     "range" : "64",
     "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "724"
   }, {
     "range" : "97",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "725"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -9236,42 +9236,42 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "729"
   }, {
     "range" : "156",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "730"
   }, {
     "range" : "106",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "731"
   }, {
     "range" : "6",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "732"
   }, {
     "range" : "94",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "733"
   }, {
     "range" : "232",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "734"
   }, {
     "range" : "232",
     "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "735"
   }, {
     "range" : "232",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "736"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -9286,7 +9286,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "737"
   }, {
     "iri" : "http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping",
@@ -9301,7 +9301,7 @@
     "comment" : {
       "en" : "Note that hasTopping is inverse functional because isToppingOf is functional"
     },
-    "attributes" : [ "object", "someValues", "inverse functional", "external" ],
+    "attributes" : [ "someValues", "inverse functional", "external", "object" ],
     "id" : "738"
   } ]
 }

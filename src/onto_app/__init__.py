@@ -3,6 +3,7 @@ import os
 from flask import Flask, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret'
