@@ -143,7 +143,7 @@ def user():
 
     try:
         add_onto_file(1, "pizza", "./data/owl/pizza.owl", "./data/json/pizza.json", "./data/new/pizza.txt")
-    except IntegrityError:
+    except:
         pass
     # return redirect(url_for('loadOntology', filename='pizza.json'))
     return render_template("ontologies.html", ontologies=ontologies, username=session['username'])
