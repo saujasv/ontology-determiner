@@ -28,6 +28,21 @@
                 </ul>
             {% endif %}
         {% endwith %}
+        <nav class="default-nav">
+            <div class="navbar-collapse">
+                <ul class="nav-ul">
+                    <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('user') }}">Home</a>
+                        </li>
+                    <li class="nav-item" style="float: left;">
+                        <a class="nav-link" href="#">{{ username }}</a>
+                    </li>
+                    <li class="nav-item" style="float: left;">
+                        <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <section id="canvasArea">
             <div id="browserCheck" class="hidden">
                 WebVOWL does not work properly in Internet Explorer and Microsoft Edge.
@@ -69,82 +84,82 @@
             </div>
 
             <div id="graph"></div>
-            <div id="menuContainer">
-                <!--Ontology Menu-->
-                <!-- <ul id="m_select" class="toolTipMenu noselect">
-                    <li><a href="#foaf" id="foaf">Friend of a Friend (FOAF) vocabulary</a></li>
-                    <li><a href="#muto" id="muto">Modular and Unified Tagging Ontology (MUTO)</a></li>
-                    <li><a href="#personasonto" id="personasonto">Personas Ontology (PersonasOnto)</a></li>
-                    <li><a href="#goodrelations" id="goodrelations">GoodRelations Vocabulary for E-Commerce</a></li>
-                    <li><a href="#sioc" id="sioc">SIOC (Semantically-Interlinked Online Communities) Core Ontology</a></li>
-                    <li><a href="#ontovibe" id="ontovibe">Ontology Visualization Benchmark (OntoViBe)</a></li>
+                <div id="menuContainer">
+                    <!--Ontology Menu-->
+                    <!-- <ul id="m_select" class="toolTipMenu noselect">
+                        <li><a href="#foaf" id="foaf">Friend of a Friend (FOAF) vocabulary</a></li>
+                        <li><a href="#muto" id="muto">Modular and Unified Tagging Ontology (MUTO)</a></li>
+                        <li><a href="#personasonto" id="personasonto">Personas Ontology (PersonasOnto)</a></li>
+                        <li><a href="#goodrelations" id="goodrelations">GoodRelations Vocabulary for E-Commerce</a></li>
+                        <li><a href="#sioc" id="sioc">SIOC (Semantically-Interlinked Online Communities) Core Ontology</a></li>
+                        <li><a href="#ontovibe" id="ontovibe">Ontology Visualization Benchmark (OntoViBe)</a></li>
 
-                    <li class="option" id="converter-option">
-                        <form class="converter-form" id="iri-converter-form">
-                            <label for="iri-converter-input">Custom Ontology:</label>
-                            <input type="text" id="iri-converter-input" placeholder="Enter ontology IRI">
-                            <button type="submit" id="iri-converter-button" disabled>Visualize</button>
-                        </form>
-                        <div class="converter-form">
-                            <input class="hidden" type="file" id="file-converter-input" autocomplete="off">
-                            <label class="truncate" id="file-converter-label" for="file-converter-input">Select ontology file</label>
-                            <button type="submit" id="file-converter-button" disabled onsubmit="window.history.back()">
-                                Upload
-                            </button>
-                        </div>
-                    </li>
-                </ul> -->
-                <!--Export Menu-->
-                <ul id="m_export" class="toolTipMenu noselect">
-                    <li><a href="#" download id="exportJson">Export as JSON</a></li>
-                    <li><a href="#" download id="exportSvg">Export as SVG</a></li>
-                    <li class="option">
-                        <div>
-                            <form class="converter-form" id="url-copy-form">
-                                <label for="exportedUrl">Export as URL:</label>
-                                <input type="text" id="exportedUrl" placeholder="#">
-                                <span id="copyBt" title="Copy to Clipboard">Copy</span>
+                        <li class="option" id="converter-option">
+                            <form class="converter-form" id="iri-converter-form">
+                                <label for="iri-converter-input">Custom Ontology:</label>
+                                <input type="text" id="iri-converter-input" placeholder="Enter ontology IRI">
+                                <button type="submit" id="iri-converter-button" disabled>Visualize</button>
                             </form>
-                        </div>
-                    </li>
-                </ul>
-                <!--Filter Menu-->
-                <ul id="m_filter" class="toolTipMenu noselect">
-                    <li class="toggleOption" id="datatypeFilteringOption"></li>
-                    <li class="toggleOption" id="objectPropertyFilteringOption"></li>
-                    <li class="toggleOption" id="subclassFilteringOption"></li>
-                    <li class="toggleOption" id="disjointFilteringOption"></li>
-                    <li class="toggleOption" id="setOperatorFilteringOption"></li>
-                    <li class="slideOption" id="nodeDegreeFilteringOption"></li>
-                </ul>
-                <!--Modes Menu -->
-                <ul id="m_modes" class="toolTipMenu noselect">
-                    <li class="toggleOption" id="dynamicLabelWidth"></li>
-                    <li class="toggleOption" id="pickAndPinOption"></li>
-                    <li class="toggleOption" id="nodeScalingOption"></li>
-                    <li class="toggleOption" id="compactNotationOption"></li>
-                    <li class="toggleOption" id="colorExternalsOption"></li>
-                </ul>
-                <!--Config Menu -->
-                <ul id="m_config" class="toolTipMenu noselect">
-                    <li class="toggleOption" id="zoomSliderOption"></li>
-                    <li class="slideOption" id="classSliderOption"></li>
-                    <li class="slideOption" id="datatypeSliderOption"></li>
-                    <li class="slideOption" id="maxLabelWidthSliderOption"></li>
-                </ul>
-                <!--About Menu-->
-                <ul id="m_about" class="toolTipMenu">
-                    <li><a href="license.txt" target="_blank">MIT License &copy; 2014-2018</a></li>
-                    <li id="credits" class="option">WebVOWL Developers:<br />
-                        Vincent Link, Steffen Lohmann, Eduard Marbach, Stefan Negru, Vitalis Wiens
-                    </li>
+                            <div class="converter-form">
+                                <input class="hidden" type="file" id="file-converter-input" autocomplete="off">
+                                <label class="truncate" id="file-converter-label" for="file-converter-input">Select ontology file</label>
+                                <button type="submit" id="file-converter-button" disabled onsubmit="window.history.back()">
+                                    Upload
+                                </button>
+                            </div>
+                        </li>
+                    </ul> -->
+                    <!--Export Menu-->
+                    <ul id="m_export" class="toolTipMenu noselect">
+                        <li><a href="#" download id="exportJson">Export as JSON</a></li>
+                        <li><a href="#" download id="exportSvg">Export as SVG</a></li>
+                        <li class="option">
+                            <div>
+                                <form class="converter-form" id="url-copy-form">
+                                    <label for="exportedUrl">Export as URL:</label>
+                                    <input type="text" id="exportedUrl" placeholder="#">
+                                    <span id="copyBt" title="Copy to Clipboard">Copy</span>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--Filter Menu-->
+                    <ul id="m_filter" class="toolTipMenu noselect">
+                        <li class="toggleOption" id="datatypeFilteringOption"></li>
+                        <li class="toggleOption" id="objectPropertyFilteringOption"></li>
+                        <li class="toggleOption" id="subclassFilteringOption"></li>
+                        <li class="toggleOption" id="disjointFilteringOption"></li>
+                        <li class="toggleOption" id="setOperatorFilteringOption"></li>
+                        <li class="slideOption" id="nodeDegreeFilteringOption"></li>
+                    </ul>
+                    <!--Modes Menu -->
+                    <ul id="m_modes" class="toolTipMenu noselect">
+                        <li class="toggleOption" id="dynamicLabelWidth"></li>
+                        <li class="toggleOption" id="pickAndPinOption"></li>
+                        <li class="toggleOption" id="nodeScalingOption"></li>
+                        <li class="toggleOption" id="compactNotationOption"></li>
+                        <li class="toggleOption" id="colorExternalsOption"></li>
+                    </ul>
+                    <!--Config Menu -->
+                    <ul id="m_config" class="toolTipMenu noselect">
+                        <li class="toggleOption" id="zoomSliderOption"></li>
+                        <li class="slideOption" id="classSliderOption"></li>
+                        <li class="slideOption" id="datatypeSliderOption"></li>
+                        <li class="slideOption" id="maxLabelWidthSliderOption"></li>
+                    </ul>
+                    <!--About Menu-->
+                    <ul id="m_about" class="toolTipMenu">
+                        <li><a href="license.txt" target="_blank">MIT License &copy; 2014-2018</a></li>
+                        <li id="credits" class="option">WebVOWL Developers:<br />
+                            Vincent Link, Steffen Lohmann, Eduard Marbach, Stefan Negru, Vitalis Wiens
+                        </li>
 
-                    <li><a href="http://vowl.visualdataweb.org/webvowl.html#releases" target="_blank">Version: 1.1.2<br />(release history)</a></li>
+                        <li><a href="http://vowl.visualdataweb.org/webvowl.html#releases" target="_blank">Version: 1.1.2<br />(release history)</a></li>
 
-                    <li><a href="http://purl.org/vowl/" target="_blank">VOWL Specification &raquo;</a></li>
-                </ul>
-                <ul id="m_search" class="toolTipMenu"></ul>
-            </div>
+                        <li><a href="http://purl.org/vowl/" target="_blank">VOWL Specification &raquo;</a></li>
+                    </ul>
+                    <ul id="m_search" class="toolTipMenu"></ul>
+                </div>
             <div class="noselect" id="swipeBarContainer">
                 <ul id="menuElementContainer">
                     <li id="c_search" class="inner-addon left-addon">
@@ -323,6 +338,9 @@
         {% if hiddenJSONNode %}
         <div class="hidden" id="hiddenJSONNode" value='{{ hiddenJSONNode }}'>{{ hiddenJSONNode|tojson|safe }}</div>
         {% endif %}
+        {% if userId %}
+        <div class="hidden" id="userId" value='{{userId}}'>{{userId | tojson | safe }}</div>
+        {% endif %} 
     </main>
     <script src="{{ url_for('static', filename='js/d3.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/webvowl.js') }}"></script>
