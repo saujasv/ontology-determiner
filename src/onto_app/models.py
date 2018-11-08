@@ -1,5 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from onto_app import db
+from onto_app.onto import add_new_ontologies
 
 class users(db.Model):
     __tabelname__ = 'users'
@@ -14,7 +15,7 @@ class ontologies(db.Model):
     __tablename__ = 'ontologies'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(200), nullable=False)
-    filepath = db.Column(db.String(200), unique=True, nullable=False)
+    # filepath = db.Column(db.String(200), unique=True, nullable=False)
     admin_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
     relations = db.relationship('class_relations', backref='ontologies')
 
@@ -49,5 +50,6 @@ class node_decisions(db.Model):
     approved = db.Column(db.Integer, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
-db.drop_all()
+# db.drop_all()
 db.create_all()
+add_new_ontologies()

@@ -1,4 +1,5 @@
 onto-venv/
+.vscode/*
 
 *.pyc
 __pycache__/
