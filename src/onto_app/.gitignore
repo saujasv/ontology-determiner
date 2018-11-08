@@ -1,5 +1,7 @@
 onto-venv/
 
+onto.db
+
 *.pyc
 __pycache__/
 
@@ -12,5 +14,3 @@ htmlcov/
 dist/
 build/
 *.egg-info/
-
-onto-venv/*
