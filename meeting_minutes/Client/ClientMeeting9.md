@@ -11,5 +11,5 @@
 
 Type | Description | Owner | Deadline  
 --- | --- | --- | ---  
-T | Integration of all elements in the project | Anirudha, Saujas | 10-11-18
+T | Integration of all elements in the project. | Anirudha, Saujas | 10-11-18
 T | Deployment | Anirudha, Saujas | 13-11-18
