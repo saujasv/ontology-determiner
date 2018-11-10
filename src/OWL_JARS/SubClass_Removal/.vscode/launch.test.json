@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "OwlApi_Trainning",
+                "projectName": "OwlApi_Trainning",
+                "workingDirectory": "/Users/shikhar/Desktop/Anime/OwlApi_Trainning-master",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "OwlApi_Trainning",
+                "projectName": "OwlApi_Trainning",
+                "workingDirectory": "/Users/shikhar/Desktop/Anime/OwlApi_Trainning-master",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

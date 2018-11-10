@@ -1,0 +1,12 @@
+Steps for generating the jar file:
+1) Run the following command: "mvn compile assembly:single"( from the root directory( can be one of Class_Removal, Restriction_Removal or SubClass_Removal ) ).
+2) Go to the target folder created after execution of step 1. 
+3) Open the jar file in vim. Navigate to MANIFEST.MF and edit the Main-Class field to: com.radw2020.OwlApi_Trainning.<MainClass> where MainClass name can be found by going recursively into the classes foder which is present in the target folder.
+4) Execute java -jar <jar_name> <Command Line Arguements> from the target folder.
+
+Format for Command line Arguements:
+1) For Class_Removal: <CLASS_IRI> <ONTOLOGY_FILE_PATH>.
+2) For Restriction_Removal: <DOMAIN_IRI> <PROPERTY_IRI> <RANGE_IRI> <ONTOLOGY_FILE_PATH>.
+3) For SubClass_Removal: <CLASS_IRI> <SUBCLASS_AXIOM_IRI> <ONTOLOGY_FILE_PATH>.
+
+Note : After completion of steps 1-4, one can move the jar file to some other location and execute it using only step 4.
