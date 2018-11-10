@@ -338,6 +338,9 @@
         {% if hiddenJSONNode %}
         <div class="hidden" id="hiddenJSONNode" value='{{ hiddenJSONNode }}'>{{ hiddenJSONNode|tojson|safe }}</div>
         {% endif %}
+        {% if hiddenJSONSubclass %}
+        <div class="hidden" id="hiddenJSONSubclass" value='{{hiddenJSONSubclass}}'>{{ hiddenJSONSubclass|tojson|safe}}</div>
+        {% endif %}
         {% if userId %}
         <div class="hidden" id="userId" value='{{userId}}'>{{userId | tojson | safe }}</div>
         {% endif %} 

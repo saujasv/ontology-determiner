@@ -572,3 +572,4 @@ N793812fc093f48628fa7608600f5c97a http://www.w3.org/2002/07/owl#onProperty http:
 N793812fc093f48628fa7608600f5c97a http://www.w3.org/2002/07/owl#someValuesFrom http://www.co-ode.org/ontologies/pizza/pizza.owl#Mild
 N793812fc093f48628fa7608600f5c97a http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://www.w3.org/2002/07/owl#Restriction
 http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://www.w3.org/2002/07/owl#Class
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot http://www.w3.org/2000/01/rdf-schema#subClassOf http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza
