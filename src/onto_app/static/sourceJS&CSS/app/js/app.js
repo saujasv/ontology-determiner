@@ -340,8 +340,14 @@ module.exports = function () {
 	//Function to return the decision, domain, range, type, and name of the relationship accepted, or rejected.
 	function returnNameLink(){
 		document.getElementById('rejectClicked').onclick = function(){
+			var ra = "yes" ; 
 			if(document.getElementById("propertySelectionInformation").className == ""){
-			var ra = document.getElementById("propname").getElementsByTagName("a")[0].href;
+			try {
+			ra = document.getElementById("propname").getElementsByTagName("a")[0].href;
+			}
+			catch(err){
+			ra = document.getElementById('propertySelectionInformation').getElementsByTagName('span')[1].innerHTML ; 
+			}
 			var rb = document.getElementById("typeProp").innerHTML ; 
 			var rc = document.getElementById("domain").getElementsByTagName("a")[0].href ; 
 			var rd = document.getElementById("range").getElementsByTagName("a")[0].href ;
@@ -376,9 +382,15 @@ module.exports = function () {
 			xhr.send(rparams);		
 		} ;
 		document.getElementById('acceptClicked').onclick = function(){
+			var aa = "yes"
 			if(document.getElementById("propertySelectionInformation").className == ""){
 				console.log("Property Selected") ; 
-			var aa = document.getElementById("propname").getElementsByTagName("a")[0].href;
+			try {
+				aa = document.getElementById("propname").getElementsByTagName("a")[0].href;
+				}
+			catch(err){
+				aa = document.getElementById('propertySelectionInformation').getElementsByTagName('span')[1].innerHTML ; 
+			}
 			var ab = document.getElementById("typeProp").innerHTML ; 
 			var ac = document.getElementById("domain").getElementsByTagName("a")[0].href ; 
 			var ad = document.getElementById("range").getElementsByTagName("a")[0].href ; 
@@ -431,6 +443,21 @@ module.exports = function () {
 		return false ; 
 	}
 
+	// checks if the subclass selected is new
+	function isNewSubClass(linkstateprop){
+		var a = document.getElementById("hiddenJSONSubclass").innerHTML ;
+		a = JSON.parse(a) ; 
+		for ( var i = 0 ; i < a.length ; i++)
+		{
+			if(linkstateprop.domain().iri() == a[i][0] && linkstateprop.range().iri() == a[i][1])
+			{
+				return true ; 
+			}
+		} 
+
+		return false ;
+	}
+
 	// sets different color to new relationships
 	function setColor() {
 		// var a = ["http://rdfs.org/sioc/ns#Space","http://rdfs.org/sioc/ns#has_usergroup","http://rdfs.org/sioc/ns#Usergroup"] ; 
@@ -440,6 +467,12 @@ module.exports = function () {
 					var r = document.getElementById(linkstateprop[i].id())
 					if (r) {
 						r.getElementsByTagName("rect")[0].setAttribute("style", "fill: rgb(120, 200, 120) ; ")
+					}
+				}
+				else if(isNewSubClass(linkstateprop[i])){
+					var r = document.getElementById(linkstateprop[i].id())
+					if(r){
+						r.getElementsByTagName("rect")[0].setAttribute("style", "fill: rgb(100,200,0) ; ")
 					}
 				}
 			}

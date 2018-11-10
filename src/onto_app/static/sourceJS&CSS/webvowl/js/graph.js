@@ -340,6 +340,22 @@ module.exports = function (graphContainerSelector) {
 		}
 		return false ; 
     }
+
+    // checks if the subclass selected is new, i.e. it still needs ti be accepted/rejected.
+    function isNewSubClass(linkstateprop){
+        console.log("Inside new subclass") ; 
+		var a = document.getElementById("hiddenJSONSubclass").innerHTML ;
+        a = JSON.parse(a) ; 
+        for( var i = 0 ; i < a.length ; i++)
+        {
+            if(linkstateprop.domain().iri() == a[i][0] && linkstateprop.range().iri() == a[i][1])
+            {
+                return true ; 
+            }
+        }
+
+        return false ; 
+    }
     
     // checks if node selected is new, , i.e. it still needs to be accepeted/rejected. 
 	function isNewNode(linkstatenode){
@@ -411,15 +427,28 @@ module.exports = function (graphContainerSelector) {
             
             if (isNew(clickedProperty))
             {
-                flagForDisplayAccRej = 1
+                flagForDisplayAccRej = 1 ; 
+            }
+            else if(isNewSubClass(clickedProperty))
+            {
+                flagForDisplayAccRej = 1 ;
             }
             else {
-                flagForDisplayAccRej = 0 
+                flagForDisplayAccRej = 0  ; 
             }
+
             console.log(alreadyDecidedRelations) ; 
             for ( i = 0 ; alreadyDecidedRelations[i] != null ; ++i){
-                if (clickedProperty.iri() == alreadyDecidedRelations[i][0] && clickedProperty.domain().iri() == alreadyDecidedRelations[i][1] && clickedProperty.range().iri() == alreadyDecidedRelations[i][2] && clickedProperty.type() == alreadyDecidedRelations[i][3] && currentUserId == alreadyDecidedRelations[i][4]) {
-                        flagForDisplayAccRej = 0 ;
+                if(alreadyDecidedRelations[i][0] != "Subclass of")
+                {
+                    if (clickedProperty.iri() == alreadyDecidedRelations[i][0] && clickedProperty.domain().iri() == alreadyDecidedRelations[i][1] && clickedProperty.range().iri() == alreadyDecidedRelations[i][2] && clickedProperty.type() == alreadyDecidedRelations[i][3] && currentUserId == alreadyDecidedRelations[i][4]) {
+                            flagForDisplayAccRej = 0 ;
+                    }
+                }
+                else {
+                    if (clickedProperty.domain().iri() == alreadyDecidedRelations[i][1] &&  clickedProperty.range().iri() == alreadyDecidedRelations[i][2] && clickedProperty.type() == alreadyDecidedRelations[i][3] && currentUserId == alreadyDecidedRelations[i][4]){
+                            flagForDisplayAccRej = 0 ;
+                    }
                 }
             }
 
