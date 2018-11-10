@@ -22,7 +22,7 @@ class ontologies(db.Model):
 class class_relations(db.Model):
     __tablename__ = 'class_relations'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    property = db.Column(db.String(200), nullable=False)
+    property = db.Column(db.String(200))
     domain = db.Column(db.String(200), nullable=False)
     range = db.Column(db.String(200), nullable=False)
     quantifier = db.Column(db.String(200))
@@ -51,5 +51,9 @@ class node_decisions(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
 # db.drop_all()
-db.create_all()
+try:
+    db.create_all()
+except:
+    pass
+
 add_new_ontologies()

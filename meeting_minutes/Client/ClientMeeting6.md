@@ -11,7 +11,7 @@
 
 Type | Description | Owner | Deadline  
 --- | --- | --- | ---  
-T | Color new relations.  | Anirudha | 28-09-18
-T | Complete backend work for storing decisions, and sending all new relations. | Saujas | 28-08-18
-T | Conditional render of accept/reject option | Shikar | 28-08-18
+T | Color new relations.  | Anirudha | 26-10-18
+T | Complete backend work for storing decisions, and sending all new relations. | Saujas | 26-10-18
+
 

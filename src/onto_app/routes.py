@@ -166,6 +166,7 @@ def decision() :
         # if flag is 1, then relation, else node
         user_id = session['userid']
         onto_id = session['ontology']
+        print(data)
         if data[0][-1] == "1" :
             #when a relationship is accepted/rejected
             Prop = data[1][8:-1]
@@ -181,7 +182,10 @@ def decision() :
             print("Type : ", Type)
 
             """ Call add_decision from onto.py to store decision """
-            add_relation_decision(user_id, Prop, Domain, Range, Type, onto_id, {'Accept': 1, 'Reject':0}[Decision])
+            if Prop == "Subclass of" :
+                add_relation_decision(user_id, None, Domain, Range, str(RDFS.subClassOf), onto_id, {'Accept': 1, 'Reject':0}[Decision] )
+            else :
+                add_relation_decision(user_id, Prop, Domain, Range, Type, onto_id, {'Accept': 1, 'Reject':0}[Decision])
 
         elif data[0][-1] == "0" :
             # When a node is accpeted or rejected.
@@ -221,16 +225,17 @@ def loadOntology(file) :
 
     # new_relations, new_nodes = get_new_relations(os.path.join(current_app.root_path,"data/new")+ "/" + fname)
     # print(new_relations)
-    result = db.engine.execute("""SELECT * FROM class_relations WHERE quantifier <> :subclass""",
-        {'subclass': RDFS.subClassOf})
+    result = db.engine.execute("""SELECT * FROM class_relations WHERE quantifier != :subclass""",
+        {'subclass': str(RDFS.subClassOf)})
     new_relations = [(r['domain'], r['property'], r['quantifier'], r['range']) for r in result.fetchall()]
 
     result = db.engine.execute("""SELECT * FROM nodes""")
     new_nodes = [n['name'] for n in result.fetchall()]
 
     result = db.engine.execute("""SELECT * FROM class_relations WHERE quantifier = :subclass""",
-        {'subclass': RDFS.subClassOf})
+        {'subclass': str(RDFS.subClassOf)})
     new_subclasses = [(r['domain'], r['range']) for r in result.fetchall()]
+    print(new_subclasses)
 
     try :
         with open(uploads,"r") as json_data:
@@ -239,6 +244,8 @@ def loadOntology(file) :
     except :
         flash('Oops record not found')
         return redirect(url_for('hello'))
+
+    # print(new_relations) 
 
     return render_template("index.html", OntologyContentJson=contents, hiddenJSONRel=new_relations, 
                         hiddenJSONNode=new_nodes, hiddenJSONSubclass=new_subclasses,
