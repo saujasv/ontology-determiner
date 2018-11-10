@@ -9,7 +9,7 @@ class users(db.Model):
     # password = db.Column(db.String(200), nullable=False)
     privilege = db.Column(db.Integer, nullable=False)
     ontology = db.relationship('ontologies', backref='users')
-    decisions = db.relationship('class_decisions', backref='users')
+    decisions = db.relationship('class_decisions', cascade="all,delete", backref='users')
 
 class ontologies(db.Model):
     __tablename__ = 'ontologies'
@@ -17,7 +17,7 @@ class ontologies(db.Model):
     name = db.Column(db.String(200), nullable=False)
     # filepath = db.Column(db.String(200), unique=True, nullable=False)
     admin_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-    relations = db.relationship('class_relations', backref='ontologies')
+    relations = db.relationship('class_relations', cascade="all,delete", backref='ontologies')
 
 class class_relations(db.Model):
     __tablename__ = 'class_relations'
@@ -27,7 +27,7 @@ class class_relations(db.Model):
     range = db.Column(db.String(200), nullable=False)
     quantifier = db.Column(db.String(200))
     onto_id = db.Column(db.Integer, db.ForeignKey('ontologies.id'), nullable=False)
-    decisions = db.relationship('class_decisions', backref='class_relations')
+    decisions = db.relationship('class_decisions', cascade="all,delete", backref='class_relations')
 
 class class_decisions(db.Model):
     __tablename__ = 'class_decisions'
@@ -41,7 +41,7 @@ class nodes(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     onto_id = db.Column(db.Integer, db.ForeignKey('ontologies.id'), nullable=False)
     name = db.Column(db.String(200), nullable=False)
-    decisions = db.relationship('node_decisions', backref='nodes')
+    decisions = db.relationship('node_decisions', cascade="all,delete", backref='nodes')
 
 class node_decisions(db.Model):
     __tablename__ = 'node_decisions'

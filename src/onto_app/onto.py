@@ -32,9 +32,10 @@ def add_onto_file(admin_id, name):
     new_ontology_id = result.lastrowid
 
     # add new relations to database
-    new_relations, new_nodes = get_new_relations(new_relations_file)
+    new_relations, new_nodes, new_subclasses = get_new_relations(new_relations_file)
     add_relations_to_db(new_relations, new_ontology_id)
     add_nodes_to_db(new_nodes, new_ontology_id)
+    add_subclasses_to_db(new_subclasses, new_ontology_id)
 
 def add_new_ontologies():
     ontologies = ['.'.join(f.split('.')[:-1]) for f in listdir("./data/owl/") if isfile(join("./data/owl/", f))]
@@ -48,6 +49,7 @@ def get_new_relations(filepath):
     f = open(filepath, 'r')
     relations = list()
     classes = list()
+    subclasses = list()
 
     # Each line of the new relations file is an RDF triple, so it is a
     # triple of the subject, predicate, and object
@@ -56,6 +58,8 @@ def get_new_relations(filepath):
         s, p, o = l.split()
         if o == str(OWL.Class):
             classes.append(s)
+        elif p == str(RDFS.subClassOf):
+            subclasses.append((s, o))
         else:
             if s in d:
                 d[s].append((p, o))
@@ -80,7 +84,7 @@ def get_new_relations(filepath):
                             rang = o1
                     if quant == str(OWL.someValuesFrom):
                         relations.append((domain, prop, quant, rang))
-    return relations, classes
+    return relations, classes, subclasses
 
 def add_nodes_to_db(nodes, onto_id):
     insert_query = """INSERT INTO
@@ -102,6 +106,19 @@ def add_relations_to_db(relations, onto_id):
         args['property'] = r[1]
         args['quantifier'] = r[2]
         args['range'] = r[3]
+        result = db.engine.execute(insert_query, args)
+
+def add_subclasses_to_db(subclasses, onto_id):
+    insert_query = """INSERT INTO
+                    class_relations (domain, property, quantifier, range, onto_id)
+                    VALUES (:domain, :property, :quantifier, :range, :onto_id)"""
+    args = {'domain': None, 'property': None, 'quantifier': None, 'range': None, 'onto_id': onto_id}
+    # print("#relations = ", len(relations))
+    for r in subclasses:
+        args['domain'] = r[0]
+        args['property'] = None
+        args['quantifier'] = str(RDFS.subClassOf)
+        args['range'] = r[1]
         result = db.engine.execute(insert_query, args)
 
 def add_relation_decision(user_id, property, domain, range, quantifier, onto_id, decision):

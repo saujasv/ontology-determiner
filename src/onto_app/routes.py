@@ -219,8 +219,13 @@ def loadOntology(file) :
     session['ontology'] = onto_id
     """ Corresponding new relations for given ontology are stored in data/new. """
 
-    new_relations, new_nodes = get_new_relations(os.path.join(current_app.root_path,"data/new")+ "/" + fname)
+    # new_relations, new_nodes = get_new_relations(os.path.join(current_app.root_path,"data/new")+ "/" + fname)
     # print(new_relations)
+    result = db.engine.execute("""SELECT * FROM class_relations""")
+    new_relations = [(r['domain'], r['property'], r['quantifier'], r['range']) for r in result.fetchall()]
+
+    result = db.engine.execute("""SELECT * FROM nodes""")
+    new_nodes = [n['name'] for n in result.fetchall()]
 
     try :
         with open(uploads,"r") as json_data:
@@ -230,7 +235,8 @@ def loadOntology(file) :
         flash('Oops record not found')
         return redirect(url_for('hello'))
 
-    return render_template("index.html", OntologyContentJson = contents, hiddenJSONRel = new_relations, hiddenJSONNode = new_nodes, userId = session['userid'], username=session['username'] )
+    return render_template("index.html", OntologyContentJson=contents, hiddenJSONRel=new_relations, 
+                        hiddenJSONNode=new_nodes, userId=session['userid'], username=session['username'] )
 
 
 # @app.route('/return-files/<path:filename>/', methods = ['GET', 'POST'])
