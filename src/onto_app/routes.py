@@ -166,7 +166,7 @@ def decision() :
         # if flag is 1, then relation, else node
         user_id = session['userid']
         onto_id = session['ontology']
-        print(data)
+        
         if data[0][-1] == "1" :
             #when a relationship is accepted/rejected
             Prop = data[1][8:-1]
@@ -235,7 +235,6 @@ def loadOntology(file) :
     result = db.engine.execute("""SELECT * FROM class_relations WHERE quantifier = :subclass""",
         {'subclass': str(RDFS.subClassOf)})
     new_subclasses = [(r['domain'], r['range']) for r in result.fetchall()]
-    print(new_subclasses)
 
     try :
         with open(uploads,"r") as json_data:
@@ -245,11 +244,9 @@ def loadOntology(file) :
         flash('Oops record not found')
         return redirect(url_for('hello'))
 
-    # print(new_relations) 
-
     return render_template("index.html", OntologyContentJson=contents, hiddenJSONRel=new_relations, 
                         hiddenJSONNode=new_nodes, hiddenJSONSubclass=new_subclasses,
-                        userId=session['userid'], username=session['username'] )
+                        userId=session['userid'], username=session['username'], emptyList = [])
 
 
 # @app.route('/return-files/<path:filename>/', methods = ['GET', 'POST'])

@@ -333,13 +333,19 @@
 		    <div class="hidden" id="OntologyContentSource" value='{{ OntologyContentJson }}'>{{ OntologyContentJson|tojson|safe }}</div>
         {% endif %}
         {% if hiddenJSONRel %}
-        <div class="hidden" id="hiddenJSONRel" value='{{ hiddenJSONRel }}'>{{ hiddenJSONRel|tojson|safe }}</div>
+            <div class="hidden" id="hiddenJSONRel" value='{{ hiddenJSONRel }}'>{{ hiddenJSONRel|tojson|safe }}</div>
+        {% else %}
+            <div class="hidden" id="hiddenJSONRel" value='{{ emptyList }}'>{{ emptyList|tojson|safe }}</div>
         {% endif %}
         {% if hiddenJSONNode %}
-        <div class="hidden" id="hiddenJSONNode" value='{{ hiddenJSONNode }}'>{{ hiddenJSONNode|tojson|safe }}</div>
+            <div class="hidden" id="hiddenJSONNode" value='{{ hiddenJSONNode }}'>{{ hiddenJSONNode|tojson|safe }}</div>
+        {% else %}
+            <div class="hidden" id="hiddenJSONNode" value='{{ emptyList }}'>{{ emptyList|tojson|safe }}</div>
         {% endif %}
         {% if hiddenJSONSubclass %}
-        <div class="hidden" id="hiddenJSONSubclass" value='{{hiddenJSONSubclass}}'>{{ hiddenJSONSubclass|tojson|safe}}</div>
+            <div class="hidden" id="hiddenJSONSubclass" value='{{hiddenJSONSubclass}}'>{{ hiddenJSONSubclass|tojson|safe}}</div>
+        {% else %}
+            <div class="hidden" id="hiddenJSONSubclass" value='{{emptyList}}'>{{ emptyList|tojson|safe}}</div>
         {% endif %}
         {% if userId %}
         <div class="hidden" id="userId" value='{{userId}}'>{{userId | tojson | safe }}</div>
