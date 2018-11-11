@@ -1,0 +1,21 @@
+Preparing an ontology for viewing:
+    Two files are required. The first is the OWL file that has to be verified, and the other file is a
+    text file that identifies the new relationships in the ontology.
+    The OWL file has to be placed in the data/owl/ directory, and the text file in data/new/ directory.
+    To generate the text file, the new RDF triples in the file need to be identified. These RDF triples
+    can be accessed by opening the OWL file using an RDF processing library like RDFLib in Python. Once
+    The new triples have been identified, the triples should be written into a file, one triple per line,
+    and a single space separating each element of the triple.
+    NOTE: The file in /data/owl should be named <file>.owl, and the file in /data/new/ <file>.txt. The names
+    of the file HAVE TO BE THE SAME, except for extension.
+    Once the files have been placed in the respective folders, they will be loaded into the database when
+    the '/' route is visited. They are then accessible to an expert.
+
+Generating verified ontology:
+    To apply changes based on decisions made by experts, the following command has to be executed:
+        python get_verified_ontology.py <ontology_name>
+    ontology_name is the name of the ontology file in /data/owl/ without the .owl extension. Once the script
+    is run, the new .owl file will be stored in /data/final/. 
+    NOTE: THE NEW RELATIONS FILE IN /data/new. WILL NOT BE CHANGED ON RUNNING THE SCRIPT
+    The database will be updated to remove those relations which have been decided upon by at least one 
+    expert. THE FILE IN /data/owl/ WILL NOT CHANGE.
