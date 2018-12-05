@@ -56,4 +56,3 @@ try:
 except:
     pass
 
-add_new_ontologies()

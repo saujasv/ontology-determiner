@@ -3,7 +3,7 @@ from os import listdir
 from os.path import isfile, join
 
 from onto_app import db
-from onto_app.aggregate import accepted
+# from onto_app.aggregate import accepted
 from rdflib import Graph
 from rdflib.namespace import OWL, RDF, RDFS
 
@@ -44,7 +44,9 @@ def add_new_ontologies():
     # print("Onto=", ontologies)
     result = db.engine.execute("""SELECT name FROM ontologies""")
     db_ontologies = [o['name'] for o in result.fetchall()]
+    # print("DB=", db_ontologies)
     for onto in ontologies:
+        # print(onto)
         if not (onto in db_ontologies):
             add_onto_file(0, onto)
 
@@ -88,7 +90,7 @@ def get_new_relations(filepath):
                             rang = o1
                     if quant == str(OWL.someValuesFrom):
                         relations.append((domain, prop, quant, rang))
-    print(subclasses)
+    # print(subclasses)
     return relations, classes, subclasses
 
 def add_nodes_to_db(nodes, onto_id):
@@ -196,10 +198,10 @@ def add_node_decision(user_id, name, onto_id, decision):
             'approved': decision
         })
 
-def get_decision(relation_id):
-    query = """SELECT * FROM class_decisions WHERE relation_id = :relation_id"""
-    result = db.engine.execute(query, {'relation_id': relation_id})
-    return accepted(result.fetchall())
+# def get_decision(relation_id):
+#     query = """SELECT * FROM class_decisions WHERE relation_id = :relation_id"""
+#     result = db.engine.execute(query, {'relation_id': relation_id})
+#     return accepted(result.fetchall())
 
 def get_ontologies_on_server():
     ontologies = ['.'.join(f.split('.')[:-1]) for f in listdir("./data/owl/") if isfile(join("./data/owl/", f))]

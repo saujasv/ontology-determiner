@@ -1,0 +1,8 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ]
+}
