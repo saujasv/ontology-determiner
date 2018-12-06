@@ -35,42 +35,8 @@ def add_header(r):
 
 @app.route('/')
 def home():
+    add_new_ontologies()
     return render_template('login.html')
-
-""" Loads ontology to database """
-@app.route('/hello', methods=["GET", "POST"])
-def hello():
-    if request.method == 'GET' :
-        add_onto_file(1, "pizza", "./data/owl/pizza.owl", "./data/json/pizza.json", "./data/new/pizza.txt")
-        return "Pizza ontology has been added to database"
-    if request.method == 'POST' :
-        """ Remanants of testing code, will be removed later when they will be no longer be used with certainity. """
-        """ Returning name and type of links. Does not update with objects. Bias for new yet to be set, will be done so when more of the backend for it is built. """
-        a = str(request.data).split(',')
-        Prop = a[0]
-        Type = a[1]
-        Decision  = a[2]
-        Domain = a[3]
-        Range = a[4]
-
-        print(Decision[12:-3])
-
-        i = 0
-        try:
-            while Prop[i] != '>':
-                i += 1
-        except:
-            print(i)
-
-        if Prop[-5 :-1] == '</a>' :
-            print(Prop[i+1:-5])
-        else  :
-            print(Prop[i+1:-8])
-
-        print(Type[8 : -1])
-        """ End of preliminary return of accept return. """
-
-    return render_template("index.html")
 
 @app.route('/login', methods=["GET"])
 def login():
@@ -248,41 +214,3 @@ def loadOntology(file) :
                         hiddenJSONNode=new_nodes, hiddenJSONSubclass=new_subclasses,
                         userId=session['userid'], username=session['username'], emptyList = [])
 
-
-# @app.route('/return-files/<path:filename>/', methods = ['GET', 'POST'])
-# def return_files(filename):
-#     print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-#     try:
-#         print("######################################")
-#         uploads = os.path.join(current_app.root_path, "OntoData") # change with a app.config thing
-#         print(uploads)
-
-#         # f = open(uploads + '/' + filename + '1' , 'w')
-#         # f.write(a)
-#         # print(repr(a))
-#         # f.close()
-#         return send_from_directory(uploads, filename,as_attachment=True, attachment_filename=filename)
-#     except Exception as e:
-#         return str(e)
-
-#     # @app.route('/uploadfile/')
-#     # def upload_files(filename) :
-#     #     try :
-#     # @app.route('/uploadFile/', methods=['GET', 'POST'])
-#     # def upload_file():
-#     #     if request.method == 'POST':
-#     #         # check if the post request has the file part
-#     #         if 'file' not in request.files:
-#     #             flash('No file part')
-#     #             return redirect(request.url)
-#     #         file = request.files['file']
-#     #         # if user does not select file, browser also
-#     #         # submit an empty part without filename
-#     #         if file.filename == '':
-#     #             flash('No selected file')
-#     #             return redirect(request.url)
-#     #         if file:
-#     #             filename = secure_filename(file.filename)
-#     #             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-#     #             return redirect(url_for('uploaded_file',
-#     #                                     filename=filename))

@@ -28,7 +28,7 @@ def generate_final_ontology(name):
     for row in result.fetchall():
         if row[1] == name:
             onto_id = row[0]
-    
+            break
     owl_path = './data/final/' + name + '.owl'
     if not os.path.isfile(owl_path):
         try:
